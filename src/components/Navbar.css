@@ -165,3 +165,23 @@
       transition: 250ms;
     }
   }
+
+@media screen and (max-width:500px){
+  .navbar-logo {
+    font-size: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(2%, 63%);
+  }
+}
+
+@media screen and (max-width:300px){
+  .navbar-logo {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(2%, 110%);
+  }
+}

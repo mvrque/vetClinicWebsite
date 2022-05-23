@@ -23,35 +23,28 @@ function Footer() {
         <div className='footer-links'>
             <div className='footer-link-wrapper'>
                 <div className='footer-link-items'>
-                    <h2>About Us</h2>
-                    <Link to='/sign-up'>How it works</Link>
-                    <Link to='/'>Testimonials</Link>
-                    <Link to='/'>Careers</Link>
-                    <Link to='/'>Investors</Link>
-                    <Link to='/'>Terms of Service</Link>   
+                    
+                    <Link to='/About'>Kliinikust</Link>
+                    <Link to='/services'>Teenused</Link>
+                    <Link to='/products'>Tooted</Link>
+                    <Link to='/news'>Uudised</Link>
+                    <Link to='/'>Kirjuta meile</Link>   
                 </div>
-                <div className='footer-link-items'>
-                    <h2>Contact us</h2>
-                    <Link to='/sign-up'>How it works</Link>
-                    <Link to='/'>Testimonials</Link>
-                    <Link to='/'>Careers</Link>
-                    <Link to='/'>Investors</Link>
-                    <Link to='/'>Terms of Service</Link>   
-                </div>
+                
             </div>
         </div>
         <section className='social-media'>
             <div className='social-media-wrap'>
                 <div className='footer-logo'>
                     <Link to='/' className='social-logo'>
-                        Tatari
+                        Tatari Loomakliinik OÜ
                     </Link>
                 </div>
                 <small className='website-rights'>
-                    TATARI LOOMAKLIINIK 2022
+                    2022
                 </small>
                 <div className='social-icons'>
-                    <Link className='social-icon-link facebook' to='/'
+                    <Link href='www.facebook.com'  className='social-icon-link facebook'  to='/'
                     target='_blank' aria-label='Facebook'>
                         <i className='fab fa-facebook-f' />
                     </Link>
