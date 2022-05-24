@@ -46,11 +46,15 @@
     font-size: 40px;
     margin: 5% 0 5% 0;
   }
+  .mainBackground {
+    height: 120vh;
+  }
 }
 
 @media screen and (max-width:550px){
   .mainBackground {
     height: 90%;
+    
   }
   .hero-container{
     display: flex;

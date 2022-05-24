@@ -5,33 +5,63 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div className='footer-container'>
-        <section className='footer-subscription'>
-            <p className='footer-subscription-heading'>
-                Join the acamef askadaeu ska
-            </p>
-            <p className='footer-subscription-text'>
-                You can subscribe anytime.
-            </p>
-            <div className='input-area'>
-                <form>
-                    <input type='email' name='email' placeholder='Your Email' className='footer-input'></input>
-                    <Button buttonStyle='btn--primary'>Subscribe</Button>
-                </form>
-            </div>
-        </section>
-        <div className='footer-links'>
-            <div className='footer-link-wrapper'>
-                <div className='footer-link-items'>
-                    
-                    <Link to='/About'>Kliinikust</Link>
-                    <Link to='/services'>Teenused</Link>
-                    <Link to='/products'>Tooted</Link>
-                    <Link to='/news'>Uudised</Link>
-                    <Link to='/'>Kirjuta meile</Link>   
+    <div>
+        <div className='footer-container'>
+            <div className='footer-worktime'>
+                <div className='footer-worktime-wrapper'>
+                    <div className='footer-worktime-items'>
+                        <h2>Avatud</h2>
+                        <div className='worktime-info'>
+                            <div className='working-days'>
+                                <p>E-R</p>
+                                <p>L-P</p>
+                            </div>
+                            <div className='working-time'>
+                                <p>10:00-18:00</p>
+                                <p>SULETUD</p>
+                            </div>
+                        </div>
+
+                        <div className='footer-contact-items'>
+                            <h2>Kontakt</h2>
+                            <Link to='/About'><i className="bi bi-geo-alt"></i>Tatari 3, Tallinn</Link>
+                            <Link to='/services'>+372 646 7084</Link>
+                            <Link to='/products'>tlk@tatari.ee</Link>
+                        </div> 
+                    </div>  
                 </div>
-                
             </div>
+
+
+
+            <section className='footer-subscription'>
+                <p className='footer-subscription-heading'>
+                    Join the acamef askadaeu ska
+                </p>
+                <p className='footer-subscription-text'>
+                    You can subscribe anytime.
+                </p>
+                <div className='input-area'>
+                    <form>
+                        <input type='email' name='email' placeholder='Your Email' className='footer-input'></input>
+                        <Button buttonStyle='btn--primary'>Subscribe</Button>
+                    </form>
+                </div>
+            </section>
+            <div className='footer-links'>
+                <div className='footer-link-wrapper'>
+                    <div className='footer-link-items'>
+                        <h2>daka</h2>
+                        <Link to='/About'>Kliinikust</Link>
+                        <Link to='/services'>Teenused</Link>
+                        <Link to='/products'>Tooted</Link>
+                        <Link to='/news'>Uudised</Link>
+                        <Link to='/'>Kirjuta meile</Link> 
+                    </div>  
+                </div>
+            </div>
+
+            
         </div>
         <section className='social-media'>
             <div className='social-media-wrap'>
@@ -56,6 +86,8 @@ function Footer() {
             </div>
         </section>
     </div>
+    
+    
   )
 }
 
