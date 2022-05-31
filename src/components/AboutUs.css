@@ -1,5 +1,5 @@
 .about-container {
-    height:50vh;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,17 +28,24 @@
 
 @media screen and (max-width: 960px) {
     .logo {
+        width: 30vh;
+    }
+    .about-container {
         margin-top: 5%;
-        width: 70vh;
+        height: 350px;
+    }
+    .about-container p {
+        font-size: 19px;
     }
   }
 
 @media screen and (max-width:550px){
-    .logo {
-        margin-top: 1%;
-        width: 40vh;
+    .logo{
+        width: 35vh;
     }
     .about-container {
-        height: 500px;
+        margin-top: 0;
+        height: 400px;
+        margin-bottom: 15%;
     }
   }

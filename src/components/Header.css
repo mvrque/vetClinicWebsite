@@ -1,0 +1,40 @@
+
+
+.header {
+    background-color: #377036;
+}
+.company-code *{
+    font-size: 0.8rem;
+    padding-left: 30px;
+   
+}
+.tel-nr{
+    font-size: 0.8rem;
+    margin-left: 30px;
+}
+
+.header-wrap {
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+}
+
+
+
+.header-year {
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.8rem;
+    
+    
+}
+
+.header-website-rights {
+    margin-left: 1%;
+    font-size: 0.7rem;
+    
+}

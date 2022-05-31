@@ -55,6 +55,7 @@
   .mainBackground {
     height: 90%;
     
+    
   }
   .hero-container{
     display: flex;
@@ -68,15 +69,16 @@
   }
   .hero-container > p {
     font-size: 20px;
-    
   }
 
   .btn-mobile{
     display: block;
     text-decoration: none;
+    
+    
   }
   .btn {
     width: 100%;
-    font-size: 15px;
+    font-size: 10px;
   }
 }
