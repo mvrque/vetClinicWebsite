@@ -7,7 +7,7 @@ import About from './components/pages/About';
 import Products from './components/pages/Products';
 import Services from './components/pages/Services';
 import News from './components/pages/News';
-import Map from './components/Map';
+
 import Header from './components/Header';
 
 
