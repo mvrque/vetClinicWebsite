@@ -61,32 +61,32 @@
 .footer-link-items, .footer-worktime-items, .footer-contact-items {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 0px;
     text-align: center;
     width: 300px;
     box-sizing: border-box;
+    
 }
 
 .footer-contact-items :link { 
     margin-top: 5%;
+    text-decoration: none;   
 }
 
 .worktime-info {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    
 }
 
 .working-days{
     margin-bottom: 2%;
+    margin-right: 2%;
 }
 
 .working-time p{
     margin-bottom: 2%;
 }
-
 
 .footer-link-items h2, .footer-worktime-items h2, .footer-contact-items h2 {
     margin-bottom: 16px;
@@ -95,8 +95,6 @@
 .footer-link-items > h2, .footer-worktime-items > h2, .footer-contact-items > h2 {
     color: green;
 }
-
-
 
 .footer-link-items a, .footer-worktime-items a {
     color: black;
@@ -118,10 +116,12 @@
     color: green;
 }
 
-/*social*/
-.socia-icon-link {
+
+.fab {
     color: green;
-    font-size: 24px;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    
     
 }
 
@@ -142,11 +142,11 @@
 }
 
 .social-icons {
-    
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 240px;
+    
 }
 
 .social-logo {
@@ -199,9 +199,11 @@
 @media screen and (max-width: 550px){
     .footer-wrapper {
         font-size: 14px;
-        width: 100%;
+        width: 120%;
+        padding-left: 22%;
     }
-    .social-logo {
-        
+    
+    .call-us {
+        width: 60%;
     }
 }

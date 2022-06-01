@@ -1,35 +1,38 @@
 .navbar {
     background-color: #ffffff;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
-    
+    z-index: 999; 
   }
-  
+
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    height: 80px;
-    max-width: 1500px;
+    width: 100%;
+    max-width: 1800px;
+    padding-top: 20px;
+    position: sticky;
     
   }
   
   .navbar-logo {
-    color: #377036;
-    justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
     font-family: 'PT Sans Caption', sans-serif;
+  }
+
+  .tatari-loomakliinik{
+    height: 80px;
+  }
+  .tatari-loomakliinik:hover {
+    transform: scale(1.05);
   }
   
   .fa-typo3 {
@@ -38,6 +41,7 @@
   }
   
   .nav-menu {
+    
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -45,9 +49,8 @@
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: 0.5rem;
     margin-top: 0.5rem;
-    
   }
   
   .nav-item {
@@ -66,11 +69,12 @@
   
   .nav-links:hover {
     border-bottom: 4px solid #377036;
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in-out;
   }
   
+  
   .fa-bars {
-    color: #fff;
+    color: #377036;
   }
   
   .nav-links-mobile {
@@ -127,13 +131,7 @@
       border-radius: 0;
     }
   
-    .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
-    }
-  
+    
     .menu-icon {
       display: block;
       position: absolute;
@@ -172,16 +170,11 @@
   }
 
 @media screen and (max-width:500px){
-  .navbar-logo {
-    font-size: 28px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(2%, 63%);
+  .tatari-loomakliinik{
+    height: 80px;
   }
   .nav-menu.active{
     margin-right: 0;
-    
   }
  
 }

@@ -1,9 +1,11 @@
 
 
 .header {
-    background-color: #377036;
+    background-color: #000000;
+    color: white;
+    height: 30px;
 }
-.company-code *{
+.company-time *{
     font-size: 0.8rem;
     padding-left: 30px;
    
@@ -16,25 +18,37 @@
 .header-wrap {
     display: flex;
     height: 25px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;    
 }
 
+.fa {
+    margin-left:-22px;
+}
 
-
-.header-year {
-    color: rgb(0, 0, 0);
+.header-location {
+    color: white;
     margin-right: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 0.8rem;
     
-    
 }
 
-.header-website-rights {
-    margin-left: 1%;
-    font-size: 0.7rem;
-    
+
+
+@media screen and (max-width: 399px) {
+    .tel-nr {
+        display: none;
+    }
+    .header-wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .company-time {
+        font-size: 0.7rem;
+        padding-left: 0;
+        margin-right: 26%;
+    }
 }
