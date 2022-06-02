@@ -4,6 +4,7 @@
     background-color: #000000;
     color: white;
     height: 30px;
+    
 }
 .company-time *{
     font-size: 0.8rem;
@@ -42,13 +43,18 @@
     .tel-nr {
         display: none;
     }
+    .header{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
     .header-wrap{
         display: flex;
-        justify-content: space-between;
+        
     }
+   
     .company-time {
         font-size: 0.7rem;
-        padding-left: 0;
-        margin-right: 26%;
+        margin-right: 80px;
     }
 }

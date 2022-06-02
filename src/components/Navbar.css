@@ -1,6 +1,7 @@
 .navbar {
     background-color: #ffffff;
     height: 100px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,6 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 999; 
+    
   }
 
   .navbar-container {
@@ -22,14 +24,14 @@
   }
   
   .navbar-logo {
-    cursor: pointer;
-    display: flex;
     align-items: center;
     font-family: 'PT Sans Caption', sans-serif;
   }
 
   .tatari-loomakliinik{
-    height: 80px;
+    position:;
+    height: 70px;
+    margin-bottom: 20px;
   }
   .tatari-loomakliinik:hover {
     transform: scale(1.05);
@@ -77,6 +79,7 @@
     color: #377036;
   }
   
+  
   .nav-links-mobile {
     display: none;
   }
@@ -115,6 +118,7 @@
       transition: all 0.5s ease;
       z-index: 1;
       height: 325px;
+      margin-top: 30px;
       
     }
   
@@ -143,8 +147,9 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: rgb(216, 150, 150);
       font-size: 2rem;
+      color: #377036;
     }
   
     .nav-links-mobile {
@@ -174,7 +179,9 @@
     height: 80px;
   }
   .nav-menu.active{
-    margin-right: 0;
+  }
+  .navbar-container{
+    height: ;
   }
  
 }
