@@ -3,6 +3,7 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import AboutUs from '../AboutUs';
 import Footer from '../Footer';
+import SomeNews from '../SomeNews';
 
 
 
@@ -11,6 +12,7 @@ function Home () {
         <>
             <HeroSection />
             <AboutUs />
+            <SomeNews />
             <Footer></Footer>
             
         </>

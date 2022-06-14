@@ -4,7 +4,6 @@
     background-color: #000000;
     color: white;
     height: 30px;
-    
 }
 .company-time *{
     font-size: 0.8rem;
@@ -13,7 +12,7 @@
 }
 .tel-nr{
     font-size: 0.8rem;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 
 .header-wrap {
@@ -38,11 +37,22 @@
 }
 
 
+.language-change{
+    margin-top: 9px;
+    width: 32px;
+    
+    
+}
 
-@media screen and (max-width: 399px) {
-    .tel-nr {
+
+@media screen and (max-width: 960px) {
+    .tel-nr{
         display: none;
     }
+}
+
+@media screen and (max-width: 399px) {
+    
     .header{
         height: 40px;
         display: flex;

@@ -40,16 +40,9 @@ function Footer() {
                             </Link>
                         </div>
                 </div> 
-                <div className='footer-links'>
-                    <div className='footer-link-wrapper'>
-                        <div className='footer-link-items'>
-                            <h2>daka</h2>
-                            <Link to='/About'>Kliinikust</Link>
-                            <Link to='/services'>Teenused</Link>
-                            <Link to='/products'>Tooted</Link>
-                            <Link to='/news'>Uudised</Link>
-                            <Link to='/'>Kirjuta meile</Link> 
-                        </div>  
+                <div className='footer-map'>
+                    <div className='footer-map-wrapper'>
+                        <img className='tatariMap' src='./tatariMaps.png'></img>
                     </div>
                 </div>
             </div>

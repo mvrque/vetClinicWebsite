@@ -4,56 +4,13 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    padding-left: 100px;
     overflow-y: hidden;
 }
 
-.footer-subscription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 24px;
-    padding: 24px;
-    color: black;
-}
-
-.footer-subscription > p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.footer-subscription-heading {
-    margin-bottom: 24px;
-    font-size: 24px;
-}
-
-.footer-subscription-text{
-    margin-bottom: 24px;
-    font-size: 20px;
-
-}
-
-.footer-input {
-    padding: 8px 20px;
-    border-radius: 2px;
-    margin-right: 10px;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    margin-bottom: 16px;
-    border: 1px solid black;
-}
-
-.footer-links {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-}
-
-
 .footer-link-wrapper, .footer-wrapper {
     display: flex; 
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 .footer-wrapper {
     width: 100%;
@@ -62,12 +19,13 @@
 .footer-link-items, .footer-worktime-items, .footer-contact-items {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin: 0px;
     text-align: center;
     width: 300px;
     box-sizing: border-box;
-    
+}
+.footer-worktime-items{
+    width: 200px;
 }
 
 .footer-contact-items :link { 
@@ -78,6 +36,8 @@
 .worktime-info {
     width: 100%;
     display: flex;
+    justify-content: center;
+    
 }
 
 .working-days{
@@ -87,6 +47,7 @@
 
 .working-time p{
     margin-bottom: 2%;
+    margin-left: 10px;
 }
 
 .footer-link-items h2, .footer-worktime-items h2, .footer-contact-items h2 {
@@ -110,7 +71,6 @@
 
 .footer-email-form h2 {
     margin-bottom: 32px;
-    
 }
 
 .footer-input::placeholder {
@@ -122,31 +82,13 @@
     color: green;
     font-size: 1.5rem;
     padding-left: 1rem;
-    
-    
-}
-
-.social-media {
-    max-width: 1000px;
-    width: 100%;
-    border: 1px solid rgb(226, 24, 24);
-
-}
-
-.social-media-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto 0 auto;
 }
 
 .social-icons {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 240px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     
 }
 
@@ -162,18 +104,18 @@
     margin-bottom: 16px;
 }
 
-.website-rights {
-    color: rgb(135, 35, 35);
-    margin-bottom: 16px;
+.footer-map{
+    padding-left: 20px;
+    width: 30%;
 }
-
-.call-us{
-    font-size: 0.7rem;
-    text-align: justify;
-    
+.tatariMap {
+   width: 70%;
 }
 
 @media screen and (max-width : 960px){
+    .footer-map{
+        display: none;
+    }
     .footer-links {
         padding-top: 2rem;
     }
@@ -201,10 +143,10 @@
     .footer-wrapper {
         font-size: 14px;
         width: 120%;
-        padding-left: 22%;
+       
     }
     
     .call-us {
-        width: 60%;
+        
     }
 }

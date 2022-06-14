@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 960px) {
     .logo {
-        width: 30vh;
+        width: 60%;
     }
     .about-container {
         margin-top: 5%;

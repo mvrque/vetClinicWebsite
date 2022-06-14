@@ -26,6 +26,9 @@
     padding: 2% 0 0 5%;
     object-fit: contain;
 }
+.btn {
+  border-radius: 10px;
+}
 
 .hero-container > h1 {
   color: black;
@@ -55,7 +58,7 @@
 
 @media screen and (max-width:550px){
   .mainBackground {
-    height: 120vh;
+    height: 120%;
   }
   .hero-container{
     display: flex;

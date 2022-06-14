@@ -52,17 +52,21 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
+                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                            Nõuanded
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
                         <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
                             Uudised
                         </Link>
                     </li>
                     
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>KIRJUTA MEILE</Button>}
             </div>
         </nav>
     </>
   )
 }
 
-export default Navbar
+export default Navbar;

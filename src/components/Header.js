@@ -7,6 +7,7 @@ function Header() {
     <div>
         <section className='header'>
             <div className='header-wrap'>
+                
                 <div>
                     <a className='tel-nr'>+372 646 7084</a>
                 </div>
@@ -19,6 +20,9 @@ function Header() {
                     <Link to='/' className='header-location'>
                         Tatari 3, Tallinn
                     </Link>
+                </div>
+                <div className='language-container'>
+                    <img className='language-change' src='./english.jpg' alt='english'></img>
                 </div>
             </div>
         </section>
