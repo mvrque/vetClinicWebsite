@@ -1,6 +1,18 @@
 import React from 'react'
-import '../../App.css'
+import '../../App.css';
+import Aboutinpage from '../Aboutinpage';
+import { Button } from '../Button';
+import Partners from '../Partners';
 
-export default function About(){
-    return <h1 className='about'>KLIINIKUST</h1>
+
+function Home () {
+    return(
+        <>
+            <Aboutinpage/>
+            <Partners/>
+            
+        </>
+    )
 }
+
+export default Home;
