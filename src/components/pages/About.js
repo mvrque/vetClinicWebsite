@@ -5,7 +5,7 @@ import { Button } from '../Button';
 import Partners from '../Partners';
 
 
-function Home () {
+function About () {
     return(
         <>
             <Aboutinpage/>
@@ -15,4 +15,4 @@ function Home () {
     )
 }
 
-export default Home;
+export default About;

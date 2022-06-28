@@ -1,6 +1,16 @@
 import React from 'react'
 import '../../App.css'
+import Prices from '../Prices';
+import Servicesinpage from '../Servicesinpage';
 
-export default function Services(){
-    return <h1 className='services'>TEENUSED</h1>
+function Services () {
+    return(
+        <>
+            <Servicesinpage/>
+            <Prices/>
+            
+        </>
+    )
 }
+
+export default Services;
