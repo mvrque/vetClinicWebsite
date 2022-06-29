@@ -7,7 +7,7 @@ function Prices() {
   return (
     <div>
         <div>
-        <h3>Visiiditasud</h3>
+        <h3 className='prices-heading'>Visiiditasu</h3>
             <table> 
               <tr>
                 <td>Visiiditasu</td>
@@ -26,7 +26,7 @@ function Prices() {
                 <td>27€</td>
               </tr>
         </table>
-        <h3>Vaktsineerimine</h3>
+        <h3 className='prices-heading'>Vaktsineerimine</h3>
         <table>
           <tr>
             <td>Nobivac DHPPi</td>
@@ -57,7 +57,7 @@ function Prices() {
             <td>26€</td>
           </tr>
         </table>
-        <h3>Kastreerimine & Steriliseerimine</h3>
+        <h3 className='prices-heading'>Kastreerimine & Steriliseerimine</h3>
         <table>
           <tr>
             <td>Koera kastreerimine - sõltub koera kaalust <br/> (hinnale lisandub valuvaigisti ja krae)</td>
@@ -84,7 +84,7 @@ function Prices() {
             <td>90€</td>
           </tr>
         </table>
-        <h3>Kosmeetilised protseduurid</h3>
+        <h3 className='prices-heading'>Kosmeetilised protseduurid</h3>
         <table>
           <tr>
             <td>Küünte lõikamine</td>

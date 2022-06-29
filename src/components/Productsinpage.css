@@ -1,0 +1,21 @@
+.specific-container {
+    text-align: center;
+}
+.specific-pic{
+    width: 80%;
+}
+
+.products-others {
+    text-align: center;
+}
+
+.others-pic{
+    width: 80%;
+}
+
+.specific-container h2 {
+    font-size: 2.5rem;
+    margin: 2% 0;
+    color: #377036;
+    font-family: 'PT Sans Caption', sans-serif;
+}
