@@ -15,17 +15,17 @@ function Advicenav() {
                 <li className='advice-nav-item'>
                     <Link className='advice-nav-link' to='/adviceskinhair'>Nahk ja karvastik</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Toitmisest</Link></li>
+                    <Link className='advice-nav-link' to='/advicenutrition'>Toitmisest</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Parasiidid</Link></li>
+                    <Link className='advice-nav-link' to='/adviceparasites'>Parasiidid</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Kasside kusekivid</Link></li>
+                    <Link className='advice-nav-link' to='/adviceurinarystone'>Kasside kusekivid</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Emase kassi jooksuaeg</Link></li>
+                    <Link className='advice-nav-link' to='/advicefemalecat'>Emase kassi jooksuaeg</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Isase kassi jooksuaeg</Link></li>
+                    <Link className='advice-nav-link' to='/advicemalecat'>Isase kassi jooksuaeg</Link></li>
                 <li className='advice-nav-item'>
-                    <Link className='advice-nav-link' to='/'>Puukborrelioos</Link></li>
+                    <Link className='advice-nav-link' to='/advicelymedisease'>Puukborrelioos</Link></li>
             </ul>
         </div>
     </nav>

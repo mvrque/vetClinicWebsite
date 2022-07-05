@@ -14,6 +14,12 @@ import Header from './components/Header';
 import Advicevisiting from './components/Advicevisiting';
 
 import Adviceskinhair from './components/Adviceskinhair';
+import Advicenutrition from './components/Advicenutrition';
+import Adviceparasites from './components/Adviceparasites';
+import Adviceurinarystone from './components/Adviceurinarystone';
+import Advicefemalecat from './components/Advicefemalecat';
+import Advicemalecat from './components/Advicemalecat';
+import Advicelymedisease from './components/Advicelymedisease';
 
 
 
@@ -35,6 +41,13 @@ function App() {
         <Route path='/questions' element={<Questions/>}/>
         <Route path='/advicevisiting' element={<Advicevisiting/>}/>
         <Route path='/adviceskinhair' element={<Adviceskinhair/>}/>
+        <Route path='/advicenutrition' element={<Advicenutrition/>}/>
+        <Route path='/adviceparasites' element={<Adviceparasites/>}/>
+        <Route path='/adviceurinarystone' element={<Adviceurinarystone/>}/>
+        <Route path='/advicefemalecat' element={<Advicefemalecat/>}/>
+        <Route path='/advicemalecat' element={<Advicemalecat/>}/>
+        <Route path='/advicelymedisease' element={<Advicelymedisease/>}/>
+
       </Routes>
     </Router>
     </> 

@@ -1,0 +1,16 @@
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.advice-visiting-list {
+    border: px solid black;
+    width: 55%;
+}
+h2{
+    font-size: 2.5rem;
+    color: #377036;
+    text-align: center;
+    margin: 2% 0;
+}

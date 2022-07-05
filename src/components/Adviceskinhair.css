@@ -1,0 +1,15 @@
+.skinhair-wrapper, .nutrition-wrapper, .parasites-wrapper, .wrapper{
+    text-align: justify;
+}
+
+.skinhair-wrapper h4, .nutrition-wrapper h4, .parasites-wrapper h4, .wrapper h4{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.skinhair-wrapper p, .nutrition-wrapper p, .parasites-wrapper p, .wrapper p{
+    width: 90%;
+    margin: 2% auto;
+}
+
+

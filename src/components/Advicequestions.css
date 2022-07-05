@@ -1,0 +1,25 @@
+.questions-container{
+    border: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.question{
+    border: 0px solid blue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #377036;
+}
+
+.question h4{
+    color: white;
+}
+
+.answer{
+    border: px solid red;
+    
+    display: flex;
+    align-items: center;
+}
