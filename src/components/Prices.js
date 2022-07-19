@@ -6,6 +6,7 @@ import './Prices.css';
 function Prices() {
   return (
     <div>
+      <h2>Hinnakiri</h2>
         <div>
         <h3 className='prices-heading'>Visiiditasu</h3>
             <table> 
@@ -111,6 +112,7 @@ function Prices() {
             <td>10€</td>
           </tr>
         </table>
+        <p className='more-information'>Lisainformatsiooni teenuste kohta saab kliiniku üldtelefonilt 6467084.</p>
         </div>
     </div>
   )

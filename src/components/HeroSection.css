@@ -8,7 +8,7 @@
 .mainBackground {
   object-fit:scale-down;
   width: 95%;
-  height: 90%;
+  height: 700px;
   position: absolute;
   z-index: -1;
   
@@ -16,18 +16,19 @@
 
 .hero-container {
     /*background: url('public/mainBackground.jpeg') center center/cover no-repeat;*/
-    height: 80vh;
-    
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    
     align-items:flex-start;
     padding: 2% 0 0 5%;
     object-fit: contain;
+    margin-bottom: 25px;
+    border: 1px solid black;
 }
 .btn {
   border-radius: 10px;
+  font-size: ;
 }
 
 .hero-container > h1 {
@@ -52,13 +53,16 @@
     margin: 5% 0 5% 0;
   }
   .mainBackground {
-    height: 120vh;
+    height: 800px;
+  }
+  .btn {
+    width: 90px;
   }
 }
 
 @media screen and (max-width:550px){
   .mainBackground {
-    height: 120%;
+    height: 700px;
   }
   .hero-container{
     display: flex;
@@ -78,12 +82,10 @@
   .btn-mobile{
     display: block;
     text-decoration: none;
-    
-    
   }
   .btn {
-    width: 50px;
-    font-size: 20px;
+    width: 40px;
+    font-size: 15px;
     border-radius: 10px;
   }
 }

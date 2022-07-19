@@ -5,7 +5,6 @@ import './Adviceparasites.css'
 function Adviceparasites() {
   return (
     <div>
-        <Advicenav/>
         <h2>Parasiidid</h2>
         <div className='parasites-wrapper'>
           <h4>Kuidas teha kindlaks, et teie koeral või kassil on kirp?</h4>

@@ -6,7 +6,6 @@ function Advicevisiting() {
   return (
     
     <div>
-        <Advicenav/>
         <h2>Nõuandeid loomakliiniku külastamiseks</h2>
         <div className='main-container'>
           <ul className='advice-visiting-list'>

@@ -95,6 +95,51 @@
    height: 70px;
    border-radius: 10px;
   }
+
+  .on-hover{
+    visibility: hidden;
+    display: block;
+    border: 1px solid black;
+    width: 250px;
+    position: absolute;
+    background-color: #377036;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    opacity: 0;
+    
+    
+    transform: translateY(-3em);
+    z-index: 0;
+    transition: all 0.3s ease 0s, visibility 0s linear 0.07s, z-index 0s linear 0.01s;
+    
+  }
+  .advice-nav:hover .on-hover{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.3s;
+    position: absolute;
+  }
+  .advice-item{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .advice-link{
+    width: 95%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .advice-link:hover{
+    transform: scale(1.05);
+
+  }
+  
   
   
   @media screen and (max-width: 960px) {

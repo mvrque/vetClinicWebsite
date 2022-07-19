@@ -5,7 +5,6 @@ import './Adviceskinhair.css'
 function Adviceskinhair() {
   return (
     <div className='skinhair-container'>
-        <Advicenav/>
         <h2>Nahk ja karvastik</h2>
         <div className='skinhair-wrapper'>
           <h4>BAKTERIAALSED NAHAHAIGUSED</h4>

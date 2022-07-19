@@ -4,7 +4,6 @@ import Advicenav from './Advicenav'
 function Advicefemalecat() {
   return (
     <div>
-        <Advicenav/>
         <h2>Emase kassi jooksuaeg</h2>
         <div className='wrapper'>
           <h4>Indlemine ehk jooksuaeg</h4>

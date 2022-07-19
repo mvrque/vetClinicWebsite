@@ -4,10 +4,8 @@ import Advicenav from './Advicenav'
 function Advicemalecat() {
   return (
     <div>
-        <Advicenav/>
         <h2>Isase kassi jooksuaeg</h2>
         <div className='wrapper'>
-          <h4>Isasel kassil jooksuaega kui sellist pole</h4>
           <p>Isasel kassil jooksuaega kui sellist pole. Tema on valmis vastavalt käituma igal ajal, kui kellelgi kassipreilidest lähiümbruses innaaeg peaks olema. Esimesed märgid isase kassi suureks saamisest võivad ilmneda juba neljakuuselt. Kass muutub rahutumaks, aktiivsemaks, mõnikord agressiivsemaks, hakkab tihedamini pissima, tihti ebasoovitavatesse kohtadesse (tavaliselt eelistab vertikaalseid pindu – lauajalad, kapinurgad, uksepiidad jne). Häälitsused muutuvad nõudlikumaks, tugevamaks.
           Kuna tavaliselt nii noortel loomadel haiguslikke põhjuseid selliseks käitumiseks pole, siis ongi enamusel juhtudest tegemist suguhormoonidest tingitud märgistamisvajadusega. Vanematel kassidel tuleks kindlasti jälgida, kas kõuts selleks ettenähtud kohtades urineerides mingit valu- või ebamugavustunde märke ei ilmuta. Samad tunnused on ka algaval kuseteedepõletikul. Vanematel loomadel võib märgistamine saada harjumuseks. Sellisel juhul ei pruugi kastreerimine aidata. Ka on nende puhul tõenäolisem mõni haiguslik põhjus. Samas on ka mitmeid haiguslikke seisundeid, mille puhul kastreerimine võib leevendust tuua.
           <br/>

@@ -6,7 +6,6 @@ import './Advicenutrition.css'
 function Advicenutrition() {
   return (
     <div>
-        <Advicenav/>
         <h2>Toitmisest</h2>
         <div className='nutrition-wrapper'>
           <h4>KUIDAS VÕRRELDA KOERTE VALMISTOITE</h4>

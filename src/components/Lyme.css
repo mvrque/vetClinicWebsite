@@ -1,0 +1,8 @@
+.tick {
+    width: 40%;
+}
+
+.tickimg{
+    display: flex;
+    justify-content: center;
+}

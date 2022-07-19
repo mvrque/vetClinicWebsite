@@ -4,7 +4,6 @@ import Advicenav from './Advicenav'
 function Adviceurinarystone() {
   return (
     <div>
-        <Advicenav/>
         <h2>Kasside kusekivid</h2>
         <div className='wrapper'>
           <h4>Üks tilk, kaks tilka, kolm tilka…</h4>

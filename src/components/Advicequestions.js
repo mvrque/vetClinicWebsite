@@ -5,7 +5,6 @@ import './Advicequestions.css'
 function Advicequestions() {
   return (
     <div>
-      <Advicenav/>
       <h2>KKK - Korduma kippuvad küsimused</h2>
         <div className='questions-container'>
             <div className='question'>

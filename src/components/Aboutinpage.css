@@ -5,9 +5,10 @@
 .housepic{
     width:90% ;
 }
-.about-container {
+.about-page-container {
     height: 600px;
     border: 0px solid black;
+    text-align: center;
 }
 
 .about-wrapper{

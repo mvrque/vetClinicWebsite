@@ -23,17 +23,20 @@
 }
 .service {
 
-    height: 200px;
+    height: 100px;
     width: 200px;
     margin-bottom: 1%;
-    border-radius: 80%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #377036;
-    color: white;
-    
-    
+    background-color: #ffffff;
+    color: #377036;
+    border: 1px solid black;
+}
+.service-icon{
+    color: black;
+    font-size: 2rem;
 }
 
 .service h3 {
