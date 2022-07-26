@@ -6,10 +6,10 @@ import Servicesinpage from '../Servicesinpage';
 function Services () {
     return(
         <>
-            <Servicesinpage/>
-            <Prices/>
-            
+        <Servicesinpage/>
+        <Prices/>
         </>
+   
     )
 }
 

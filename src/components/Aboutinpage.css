@@ -3,12 +3,16 @@
 
 }
 .housepic{
-    width:90% ;
+    width:92% ;
+}
+.family-heading{
+    font-size: 2rem;
+    margin-top: 0;
 }
 .about-page-container {
-    height: 600px;
-    border: 0px solid black;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .about-wrapper{
@@ -27,7 +31,8 @@
     
 }
 .about-description p{
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin-bottom: 2%;
 }
 
 .house-pic-div{
@@ -40,6 +45,80 @@
 
 h3 {
     text-align: center;
-    font-size:1.4rem ;
+    font-size:1.2rem ;
 }
+.map-container{
+    border: 0px solid black;
+    height: 430px;
+    width: 100%;
+    margin-top: 2%;
+    
+}
+.phone-mail-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+
+.partner{
+    width: 15%;
+}
+
+.partners-container {
+    width: 100%;
+    height: 100px;
+    border: 0px solid black;
+    margin-top: 2%;
+}
+.partners-container h2{
+    font-size: 2.5rem;
+    color: #377036;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.partners-wrapper{
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.call-us{
+    border: 1px solid black;
+    background-color: #377036;
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    padding: 20px 26px;   
+}
+.call-us:hover{
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease-out;
+}
+
+
+.phone-nr{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.call-us:hover a{
+    color: black;
+    transform: scale(1.1);
+}
+.slide-container{
+    margin: 2% auto;
+    width: 75%;
+}
+.each-slide{
+    height: 500px;
+}
+.slide-image{
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
 

@@ -22,7 +22,6 @@
     justify-content: space-evenly;
 }
 .service {
-
     height: 100px;
     width: 200px;
     margin-bottom: 1%;
@@ -31,17 +30,23 @@
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    color: #377036;
-    border: 1px solid black;
+    color: #000000;
 }
+
 .service-icon{
-    color: black;
+    color: #000000;
     font-size: 2rem;
+}
+.service-icon:hover{
+    color: #377036;;
+    margin-bottom: 5%;
 }
 
 .service h3 {
     font-size: 1rem;
     width: 100%;
+    margin-top: 5%;
+    position: absolute;
 }
 break {
     flex-basis: 100%;

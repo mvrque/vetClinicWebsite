@@ -1,11 +1,10 @@
 .footer-container {
     background-color: rgb(255, 255, 255);
-    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    padding-left: 100px;
     overflow-y: hidden;
+    border: 1px solid black;
 }
 
 .footer-link-wrapper, .footer-wrapper {
@@ -14,6 +13,7 @@
 }
 .footer-wrapper {
     width: 100%;
+    border: 1px solid red;
 }
 
 .footer-link-items, .footer-worktime-items, .footer-contact-items {
@@ -54,36 +54,6 @@
     margin-bottom: 16px;
 }
 
-.footer-link-items > h2, .footer-worktime-items > h2, .footer-contact-items > h2 {
-    color: green;
-}
-
-.footer-link-items a, .footer-worktime-items a {
-    color: black;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.footer-link-items a:hover {
-    color: green;
-    transition: 0.3s ease-out;
-}
-
-.footer-email-form h2 {
-    margin-bottom: 32px;
-}
-
-.footer-input::placeholder {
-    color: green;
-}
-
-
-.fab {
-    color: green;
-    font-size: 1.5rem;
-    padding-left: 1rem;
-}
-
 .social-icons {
     display: flex;
     justify-content: center;
@@ -93,7 +63,7 @@
 }
 
 .social-logo {
-    color: green;
+    color: #377036;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -104,12 +74,20 @@
     margin-bottom: 16px;
 }
 
-.footer-map{
-    padding-left: 20px;
-    width: 30%;
+.footer-advice{
+    border: 1px solid black;
 }
-.tatariMap {
-   width: 70%;
+.footer-advice-list{
+    list-style: none;
+    text-align: center;
+}
+.footer-advice-list a{
+    text-decoration: none;
+    color: black;
+}
+.footer-advice-list a:hover{
+    text-decoration: none;
+    color:#377036;
 }
 
 @media screen and (max-width : 960px){

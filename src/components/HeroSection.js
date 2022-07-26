@@ -2,7 +2,8 @@ import React from 'react'
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
-import ButtonMailto from './ButtonMailto';
+import { Link } from 'react-router-dom';
+
 
 function HeroSection() {
   return (
@@ -12,8 +13,9 @@ function HeroSection() {
         <h1>OLEME SINU LEMMIKU JAOKS OLEMAS!</h1>
         <p>Avatud E-R 10:00-18:00</p>
         <div className='hero-btns'>
-
-            <ButtonMailto mailto="mailto:tlk@tatari.ee" className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>VÕTA MEIEGA ÜHENDUST</ButtonMailto>
+        <Link to='/about'>
+            <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--large'>TEENUSED JA HINNAKIRI</Button>
+        </Link>
         </div>
     </div>
     

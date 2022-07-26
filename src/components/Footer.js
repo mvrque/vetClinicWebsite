@@ -20,10 +20,25 @@ function Footer() {
                             <p>10:00-18:00</p>
                             <p>SULETUD</p>
                         </div>
-                        
                     </div> 
-                    <span className='call-us'>Teie paremaks teenindamiseks on vajalik eelnev registreerimine telefoni teel.</span>    
+                    <span className=''>Teie paremaks teenindamiseks on vajalik eelnev registreerimine telefoni teel.</span>    
                 </div> 
+                <div className='footer-advice'>
+                <h2>Nõuanded</h2>
+                    <ul className='footer-advice-list'>
+                        <li><Link to={'/questions'}>Korduma kippuvad küsimused</Link></li>
+                        <li ><Link to={'/advicevisiting'}>Nõuandeid loomakliiniku külastamiseks</Link></li>
+                        <li ><Link to={'/adviceskinhair'}>Nahk ja karvastik</Link></li>
+                        <li ><Link to={'/advicenutrition'}>Toitmisest</Link></li>
+                        <li ><Link to={'/adviceparasites'}>Parasiidid</Link></li>
+                        <li ><Link to={'/adviceurinarystone'}>Kasside kusekivid</Link></li>
+                        <li ><Link to={'/advicefemalecat'}>Emase kassi jooksuaeg</Link></li>
+                        <li ><Link to={'/advicemalecat'}>Isase kassi jooksuaeg</Link></li>
+                        <li ><Link to={'/advicelymedisease'}>Puukborrelioos</Link></li>
+                           
+                    </ul>
+
+                </div>
                 <div className='footer-contact-items'>
                         <h2>Kontakt</h2>
                         <Link to='/About'><i className="bi bi-geo-alt"></i>Tatari 3, Tallinn</Link>
@@ -40,11 +55,7 @@ function Footer() {
                             </Link>
                         </div>
                 </div> 
-                <div className='footer-map'>
-                    <div className='footer-map-wrapper'>
-                        <img className='tatariMap' src='./tatariMaps.png'></img>
-                    </div>
-                </div>
+                
             </div>
             
 

@@ -9,7 +9,7 @@ function About () {
     return(
         <>
             <Aboutinpage/>
-            <Partners/>
+            
             
         </>
     )

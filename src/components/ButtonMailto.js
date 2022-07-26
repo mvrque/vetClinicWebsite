@@ -12,7 +12,7 @@ export const ButtonMailto = ({children, type, onClick, buttonStyle, buttonSize, 
     SIZES[0];
 
     return (
-        <Link to='/services' className='btn-mobile'>
+        <Link to='/about' className='btn-mobile'>
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={(e) => {

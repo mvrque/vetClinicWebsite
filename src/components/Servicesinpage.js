@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Servicesinpage.css'
 
@@ -25,7 +26,7 @@ function Servicesinpage() {
               <i class="service-icon fas fa-microchip fa-light"/>
               <h3>Mikrokiibi paigaldus</h3></div>   
             <div className='service'>
-            <i class="service-icon fas fa-soundform"/>
+              <i class="service-icon fas fa-circle-notch"/>
               <h3>Ultraheli diagnostika</h3></div>
             <break/>
             <div className='service'>
@@ -37,7 +38,9 @@ function Servicesinpage() {
             <div className='service'>
               <i class="service-icon fas fa-microscope"/>
               <h3>Põlveuuring</h3></div>   
-            <div className='service'><h3>Kirurgilised menetlused</h3></div> 
+            <div className='service'>
+              <i class="service-icon fas fa-user-doctor"></i>
+              <h3>Kirurgilised menetlused</h3></div> 
             <div className='service'>
               <i class="service-icon fas fa-tooth"/>
               <h3>Hambakivi eemaldus</h3></div>   

@@ -20,6 +20,8 @@ import Adviceurinarystone from './components/Adviceurinarystone';
 import Advicefemalecat from './components/Advicefemalecat';
 import Advicemalecat from './components/Advicemalecat';
 import Advicelymedisease from './components/Advicelymedisease';
+import Scrolltotop from './Scrolltotop';
+
 
 
 
@@ -27,6 +29,7 @@ function App() {
   return (
     <>
     <Router>
+    <Scrolltotop>
     <Header />
       <Navbar />
       
@@ -49,8 +52,10 @@ function App() {
         <Route path='/advicelymedisease' element={<Advicelymedisease/>}/>
 
       </Routes>
+      </Scrolltotop>
     </Router>
     </> 
+
   );
 }
 
