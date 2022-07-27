@@ -13,7 +13,7 @@
 .btn--primary {
     background-color: var(--primary);
     color: rgb(255, 255, 255);
-    border: 1px solid var(--primary);
+    border: px solid #377036;
 }
 
 .btn--outline{
@@ -25,20 +25,26 @@
 }
 
 .btn--medium{
+    background: #cbb47f8a;
+    color: #377036;
     padding: 8px 20px;
     font: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn--large {
     padding: 5px 26px;
     font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
 .btn--medium:hover, .btn--large:hover{
-    background: #377036;
+    
     transform: scale(1.03);
-    color: black;
+    
     transition: all 0.3s ease-out;
 }
 

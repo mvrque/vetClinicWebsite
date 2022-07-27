@@ -13,7 +13,7 @@ function Header() {
                 </div>
                 <div className='company-time'>
                    <span>E-R 10-18 </span>
-                   <span>L-P <i class="fa fa-lock" /></span>
+                   <span>L-P <i className="fa fa-lock" /></span>
                 </div>
                 
                 <div className='header-company-location'>

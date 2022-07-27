@@ -12,26 +12,26 @@ function SomeServices() {
             
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
-                    <i class="home-service-icon fas fa-heartbeat"/>
+                    <i className="home-service-icon fas fa-heartbeat"/>
                     <h3>Tervisekontroll ja konsultatsioon</h3>
                 </div>
             </Link>
             <Link className='linktest' to={'/services'}>
             <div className='home-service '>
-                    <i class="home-service-icon fas fa-syringe"/>
+                    <i className="home-service-icon fas fa-syringe"/>
                     <h3>Vaktsineerimine</h3>
                 </div>
             </Link>
 
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
-                <i class="home-service-icon fas fa-vials"/>
+                <i className="home-service-icon fas fa-vials"/>
                 <h3>Vere- ja uriinianalüüsid</h3>
                 </div>
             </Link>
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
-                <i class="home-service-icon fas fa-tooth"/>
+                <i className="home-service-icon fas fa-tooth"/>
                     <h3>Hambakivi eemaldus</h3>
                 </div> 
             </Link>  

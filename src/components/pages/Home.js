@@ -5,6 +5,7 @@ import AboutUs from '../AboutUs';
 import Footer from '../Footer';
 import SomeNews from '../SomeNews';
 import SomeServices from '../SomeServices';
+import Specific from '../Specific';
 
 
 
@@ -15,6 +16,7 @@ function Home () {
             <HeroSection />
             <SomeServices />
             <AboutUs />
+            <Specific />
             <SomeNews />
             <Footer></Footer>
             

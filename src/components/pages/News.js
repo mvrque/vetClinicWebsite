@@ -1,6 +1,10 @@
 import React from 'react'
 import '../../App.css'
+import Newsall from '../Newsall'
+import Productsinpage from '../Productsinpage'
 
 export default function News(){
-    return <h1 className='news'>UUDISED</h1>
+    return <>
+    <Newsall/>
+    </>
 }
