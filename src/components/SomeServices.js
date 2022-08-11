@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Someservices.css'
+import './Someservices.css';
+import {useTranslation} from "react-i18next";
 
 
 function SomeServices() {
-  return (
+    const {t, i18n} = useTranslation('common');
+    return (
     
     <div>
         
@@ -13,26 +15,27 @@ function SomeServices() {
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
                     <i className="home-service-icon fas fa-heartbeat"/>
-                    <h3>Tervisekontroll ja konsultatsioon</h3>
+                    <h3>{t("services.healthcheck")}</h3>
                 </div>
             </Link>
             <Link className='linktest' to={'/services'}>
             <div className='home-service '>
                     <i className="home-service-icon fas fa-syringe"/>
-                    <h3>Vaktsineerimine</h3>
+                    <h3>{t("services.vaccination")}</h3>
                 </div>
             </Link>
+            <div className='break'></div>
 
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
                 <i className="home-service-icon fas fa-vials"/>
-                <h3>Vere- ja uriinianalüüsid</h3>
+                <h3>{t("services.analyses")}</h3>
                 </div>
             </Link>
             <Link className='linktest' to={'/services'}>
                 <div className='home-service'>
                 <i className="home-service-icon fas fa-tooth"/>
-                    <h3>Hambakivi eemaldus</h3>
+                    <h3>{t("services.teeth")}</h3>
                 </div> 
             </Link>  
         </div>

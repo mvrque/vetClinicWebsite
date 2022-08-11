@@ -1,11 +1,14 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
+
 
 function Header() {
-  return (
+    const {t, i18n} = useTranslation('common');
+    return (
     <div>
-        <section className='header'>
+        <div className='header'>
             <div className='header-wrap'>
                 
                 <div>
@@ -22,10 +25,18 @@ function Header() {
                     </Link>
                 </div>
                 <div className='language-container'>
-                    <img className='language-change' src='./english.jpg' alt='english'></img>
+                    <button onClick={() => i18n.changeLanguage('est')}>
+                        <img className='language-change' src='./estonia.jpg' alt='estonian flag'></img>
+                    </button>
+                    <button onClick={() => i18n.changeLanguage('en')}>
+                        <img className='language-change' src='./english.jpg' alt='english flag'></img>
+                    </button>
+                    <button onClick={() => i18n.changeLanguage('ru')}>
+                        <img className='language-change' src='./russia.jpg' alt='estonian flag'></img>
+                    </button>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
   )
 }

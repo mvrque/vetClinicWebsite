@@ -228,6 +228,17 @@
       color: #242424;
       transition: 250ms;
     }
+    .on-hover{
+      width: 100%;
+      height: 300px;
+      
+      margin-top: 0;
+      margin-bottom: 10%;
+    }
+    .advice-nav:hover, .nav-menu{
+      grid-template-columns: repeat(7, auto);
+    }
+    
   }
 
 @media screen and (max-width:500px){

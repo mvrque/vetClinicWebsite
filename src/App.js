@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -28,6 +28,7 @@ import Scrolltotop from './Scrolltotop';
 function App() {
   return (
     <>
+    <Suspense fallback="loading">
     <Router>
     <Scrolltotop>
     <Header />
@@ -54,6 +55,7 @@ function App() {
       </Routes>
       </Scrolltotop>
     </Router>
+    </Suspense>
     </> 
 
   );

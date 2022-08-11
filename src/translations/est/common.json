@@ -1,0 +1,38 @@
+{
+    "navbar": {
+        "clinic": "Kliinikust",
+        "services": "Teenused ja hinnakiri",
+        "products": "Tooted",
+        "advice": "Nõuanded",
+        "news": "Uudised" 
+    },
+    "advicenav": {
+        "questions": "Korduma kippuvad küsimused",
+        "advicevisiting": "Nõuandeid loomakliiniku külastamiseks",
+        "adviceskinhair": "Nahk ja karvastik",
+        "advicenutrition": "Toitmisest",
+        "adviceparasites": "Parasiidid",
+        "adviceurinarystone": "Kasside kusekivid",
+        "advicefemalecat": "Emase kassi jooksuaeg",
+        "advicemalecat": "Isase kassi jooksuaeg",
+        "advicelymedisease": "Puukborrelioos"
+    },
+    "herosection": {
+        "title": "SÕBRA TERVISEKS",
+        "description": "Oleme su lemmiku jaoks olemas argipäeviti 10:00 - 18:00",
+        "contactus-btn": "VÕTA MEIEGA ÜHENDUST"
+    },
+    "about":{
+        "title": "TERE TULEMAST TATARI LOOMAKLIINIKUSSE!",
+        "description": "Tatari Loomakliinik tegutseb 1995. aasta oktoobrikuust Tallinna kesklinnas, aadressil Tatari 3. Selle ajaga on dr. Andrus Joost oma tubli tööga teinud kliinikust ühe juhtiva asutuse tänapäeval populaarseteks muutunud eksootiliste lemmikloomade (närilised, linnud, reptiilid jms.) ravis ja hooldamises. Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga.",
+        "services-btn": "TEENUSED JA HINNAKIRI"
+    },
+    "services":{
+        "healthcheck": "Tervisekontroll ja konsultatsioon",
+        "vaccination": "Vaktsineerimine",
+        "analyses": "Vere- ja uriinianalüüsid",
+        "teeth": "Hambakivi eemaldus"
+    }
+    
+}
+

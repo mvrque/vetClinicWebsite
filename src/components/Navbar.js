@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from './Button';
 import './Navbar.css'
+import {useTranslation} from "react-i18next";
+
 
 
 function Navbar() {
@@ -24,8 +26,9 @@ function Navbar() {
     }, [])
 
     window.addEventListener('resize', showButton);
-
-  return (
+    const {t, i18n} = useTranslation('common');
+    return (
+    
     <>
         <nav className='navbar'>
             <div className='navbar-container'>
@@ -38,38 +41,38 @@ function Navbar() {
                 <ul className={ click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                            Kliinikust
+                            {t("navbar.clinic")}
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                            Teenused ja hinnad
+                        {t("navbar.services")}
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                            Tooted
+                        {t("navbar.products")}
                         </Link>
                     </li>
                     <li className='advice-nav nav-item'>
                         <Link to='/advicevisiting' className='nav-links' onClick={closeMobileMenu} //</li>onMouseEnter={e => {setStyle({display:'block'});}} onMouseLeave={e => {setStyle({display: 'none'})}} 
-                        >Nõuanded
+                        >{t("navbar.advice")}
                         </Link>
                             <ul className='on-hover'>
-                                <li className='advice-item'><Link className='advice-link' to={'/questions'}>Korduma kippuvad küsimused</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicevisiting'}>Nõuandeid loomakliiniku külastamiseks</Link></li>
-                                <li className='advice-item'><Link  className='advice-link' to={'/adviceskinhair'} onClick={closeMobileMenu}>Nahk ja karvastik</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicenutrition'}>Toitmisest</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/adviceparasites'}>Parasiidid</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>Kasside kusekivid</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicefemalecat'}>Emase kassi jooksuaeg</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>Isase kassi jooksuaeg</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>Puukborrelioos</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/questions'}>{t("advicenav.questions")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/advicevisiting'}>{t("advicenav.advicevisiting")}</Link></li>
+                                <li className='advice-item'><Link  className='advice-link' to={'/adviceskinhair'} onClick={closeMobileMenu}>{t("advicenav.adviceskinhair")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/advicenutrition'}>{t("advicenav.advicenutrition")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/adviceparasites'}>{t("advicenav.adviceparasites")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>{t("advicenav.adviceurinarystone")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/advicefemalecat'}>{t("advicenav.advicefemalecat")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
+                                <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
                             </ul>
                     </li>
                     <li className='nav-item'>
                         <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
-                            Uudised
+                        {t("navbar.news")}
                         </Link>
                     </li>
                     

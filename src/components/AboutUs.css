@@ -1,31 +1,29 @@
 .about-container {
     width: 100%;
-    border: px solid black;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
 
 }
 .about-container-description{
-    border: 0px solid red;
+    border: 1px solid red;
     width: 60%;
     text-align: center; 
 }
 
 .about-container-description h2{
-    font-size: 2.3rem;
-    margin-bottom: 4%;
-
-    
+    font-size: 2.5rem;
+    margin-bottom: 4%; 
+    margin-top: 0; 
 }
 .papagoi-container{
     margin-top: 1%;
-    width: 25%;
+   
     border: 0px solid blue;
-    
 }
 .papagoi{
-    width: 90%;
+    width: 300px;
 }
 
 .about-container p {
@@ -47,28 +45,40 @@
 
 
 @media screen and (max-width: 960px) {
-    .logo {
-        width: 60%;
+    .about-container-description h2 {
+        font-size: 2rem;
+    }
+    .about-container-description p {
+        font-size: 1rem;
     }
     .about-container {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .about-container p {
-        font-size: 19px;
+    .about-container-description{
+        width: 80%;
     }
-    .services-btns button{
-        font-size: 1rem;
-        width: 250px;
+    .services-btns{
+        width: 300px;
+    }
+    .papagoi-container{
+        border: 1px solid black;
+        align-items: center;
     }
   }
 
 @media screen and (max-width:550px){
-    .logo{
-        width: 80%;
-    }
-    .about-container {
-        margin-top: 0;
-        margin-bottom: 10%;
-    }
-    
-  }
+ .papagoi{
+    width: 150px;
+ }
+ .about-container-description h2{
+    font-size: 1.5rem;
+ }
+ .about-container-description p {
+    font-size: 0.9rem;
+ }
+ .services-btns{
+    width: 200px;
+ }
+}

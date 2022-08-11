@@ -3,16 +3,18 @@ import '../App.css';
 import './AboutUs.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import {useTranslation} from "react-i18next";
 
 function AboutUs() {
+  const {t, i18n} = useTranslation('common');
   return (
     <div className='about-container'>
       <div className='about-container-description'>
-        <h2>TERE TULEMAST TATARI LOOMAKLIINIKUSSE!</h2>
-        <p>Tatari Loomakliinik tegutseb 1995. aasta oktoobrikuust Tallinna kesklinnas, aadressil Tatari 3. Selle ajaga on dr. Andrus Joost oma tubli tööga teinud kliinikust ühe juhtiva asutuse tänapäeval populaarseteks muutunud eksootiliste lemmikloomade (närilised, linnud, reptiilid jms.) ravis ja hooldamises. Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga.</p>
+        <h2>{t("about.title")}</h2>
+        <p>{t("about.description")}</p>
         <div className='services-btns'>
-          <Link className='button-to-services' to={'/servisces'}>
-            <Button className='btns button-to-services' buttonStyle='btn--primary' buttonSize='btn--large'>TEENUSED JA HINNAKIRI</Button>
+          <Link className='button-to-services' to={'/services'}>
+            <Button className='btns button-to-services' buttonStyle='btn--primary' buttonSize='btn--large'>{t("about.services-btn")}</Button>
           </Link>
         </div>
       </div>

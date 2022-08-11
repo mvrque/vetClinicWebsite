@@ -34,11 +34,11 @@
 }
 .btn {
   border-radius: 10px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: ;
   background: #cbb47f;
   background-color: #377036;
-  color: black;
+  color: rgb(255, 252, 252);
 
 }
 
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .hero-container > h1 {
+  .hero-container h1 {
     font-size: 40px;
     margin: 5% 0 5% 0;
   }
@@ -71,30 +71,51 @@
   .btn {
     width: 90px;
   }
+  .hero-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-container-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-btns{
+    margin: 10px auto;
+  }
 }
 
 @media screen and (max-width:550px){
   .mainBackground {
-    height: 700px;
+    margin-top: 250px;
+    height: 250px;
+    width: 100%;
+    border: px solid rgb(145, 28, 28);
   }
+ 
   .hero-container{
     display: flex;
-    align-items: center;
+    justify-content: center;
     height:500px;
-   
-  }
-  .hero-container > h1 {
-    font-size: 25px;
     text-align: center;
-     
+    border: px solid black;
+
   }
-  .hero-container > p {
+  .hero-container-wrapper{
+    border: px solid black;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-container h1 {
+    font-size: 40px; 
+  }
+  .hero-container p {
     font-size: 20px;
   }
-
-  .btn-mobile{
-    display: block;
-    text-decoration: none;
+  .hero-btns{
+    border: px solid black;
+    margin: 10px auto;
   }
   .btn {
     width: 40px;

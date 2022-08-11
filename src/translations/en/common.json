@@ -1,0 +1,36 @@
+{
+    "navbar": {
+        "clinic": "About us",
+        "services": "Services and prices",
+        "products": "Products",
+        "advice": "Advice",
+        "news": "News"
+    },
+    "advicenav": {
+        "questions": "Frequently asked questions",
+        "advicevisiting": "Advice for visiting a veterinary clinic",
+        "adviceskinhair": "Skin and fur",
+        "advicenutrition": "About feeding your pet",
+        "adviceparasites": "Parasites",
+        "adviceurinarystone": "Cat's urinary stones",
+        "advicefemalecat": "Femal cat's period of rut",
+        "advicemalecat": "Male cat's period of rut",
+        "advicelymedisease": "Lyme disease"
+    },
+    "herosection": {
+        "title": "FOR THE HEALTH OF YOUR FRIEND",
+        "description": "We are here for your pet from Monday to Friday 10:00 - 18:00",
+        "contactus-btn": "CONTACT US"
+    },
+    "about":{
+        "title": "WELCOME TO TATARI VETERINARY CLINIC",
+        "description": "Tatari Veterinary Clinic, situated in the center of Tallinn, was established in October 1995. Since then dr. Andrus Joost has done an excellent job in turning the clinic into one of the leading institutions in the treatment and care of exotic pets (reptiles, rodents, birds etc.) as well as dogs, cats and other household pets. Tatari Veterinary Clinic is joined in partnerships with several animal rescue organizations.",
+        "services-btn": "SERVICES AND PRICES"
+    },
+    "services":{
+        "healthcheck": "Health check and consulation",
+        "vaccination": "Vaccination",
+        "analyses": "Blood and urine analyses",
+        "teeth": "Removal of tartar"
+    }
+}
