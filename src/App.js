@@ -21,6 +21,7 @@ import Advicefemalecat from './components/Advicefemalecat';
 import Advicemalecat from './components/Advicemalecat';
 import Advicelymedisease from './components/Advicelymedisease';
 import Scrolltotop from './Scrolltotop';
+import Admin from './components/pages/Admin';
 
 
 
@@ -51,6 +52,12 @@ function App() {
         <Route path='/advicefemalecat' element={<Advicefemalecat/>}/>
         <Route path='/advicemalecat' element={<Advicemalecat/>}/>
         <Route path='/advicelymedisease' element={<Advicelymedisease/>}/>
+       
+       
+       <Route path='/admin' element={<Admin/>}/>
+
+
+        
 
       </Routes>
       </Scrolltotop>

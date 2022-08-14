@@ -37,10 +37,7 @@
     color: #000000;
     font-size: 2rem;
 }
-.service-icon:hover{
-    color: #377036;;
-    margin-bottom: 5%;
-}
+
 
 .service h3 {
     font-size: 1rem;
@@ -53,4 +50,13 @@ break {
     width: 0px; 
     height: 0px; 
     overflow: hidden;
+  }
+
+  @media screen and (max-width: 960px) {
+    .service{
+        border: 1px solid  black;
+    }
+    .service-icon{
+        padding-bottom: 30px;
+    }
   }

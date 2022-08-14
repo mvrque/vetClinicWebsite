@@ -1,118 +1,120 @@
 import React from 'react';
 import './Prices.css';
+import {useTranslation} from "react-i18next";
 
 
 
 function Prices() {
+  const {t, i18n} = useTranslation('common');
   return (
     <div>
-      <h2>Hinnakiri</h2>
+      <h2>{t("prices.header")}</h2>
         <div>
-        <h3 className='prices-heading'>Visiiditasu</h3>
+        <h3 className='prices-heading'>{t("prices.visitfee")}</h3>
             <table> 
               <tr>
-                <td>Visiiditasu</td>
+                <td>{t("prices.visitfee")}</td>
                 <td>22€</td>
               </tr>
               <tr>
-                <td>Kordusvisiit (kehtib kalendrikuu jooksul, ühe haigusloo ulatuses)</td>
+                <td>{t("prices.returnvisit")}</td>
                 <td>13€</td>
               </tr>
               <tr>
-                <td>Operatsioonide puhul fikseeritud visiiditasu</td>
+                <td>{t("prices.operation")}</td>
                 <td>25€</td>
               </tr>
               <tr>
-                <td>Visiiditasu eelnevalt registreerumata klientidele</td>
+                <td>{t("prices.nonregistered")}</td>
                 <td>27€</td>
               </tr>
         </table>
-        <h3 className='prices-heading'>Vaktsineerimine</h3>
+        <h3 className='prices-heading'>{t("services.vaccination")}</h3>
         <table>
           <tr>
-            <td>Nobivac DHPPi</td>
+            <td>{t("prices.nobivac")}</td>
             <td>22€</td>
           </tr>
           <tr>
-            <td>Nobivac DHPPiL4</td>
+            <td>{t("prices.nobivac4")}</td>
             <td>27.20€</td>
           </tr>
           <tr>
-            <td>DHPPiL4R</td>
+            <td>{t("prices.dhppil4r")}</td>
             <td>30€</td>
           </tr>
           <tr>
-            <td>R (Marutaud)</td>
+            <td>{t("prices.rabies")}</td>
             <td>20€</td>
           </tr>
           <tr>
-            <td>Tricat</td>
+            <td>{t("prices.tricat")}</td>
             <td>24€</td>
           </tr>
           <tr>
-            <td>TricatR</td>
+            <td>{t("prices.tricatr")}</td>
             <td>28€</td>
           </tr>
           <tr>
-            <td>Myxoren</td>
+            <td>{t("prices.myxoren")}</td>
             <td>26€</td>
           </tr>
         </table>
-        <h3 className='prices-heading'>Kastreerimine & Steriliseerimine</h3>
+        <h3 className='prices-heading'>{t("prices.castrationsterilization")}</h3>
         <table>
           <tr>
-            <td>Koera kastreerimine - sõltub koera kaalust <br/> (hinnale lisandub valuvaigisti ja krae)</td>
+            <td>{t("prices.dogcast")}</td>
             <td>162€ - 287€</td>
           </tr>
           <tr>
-            <td>Koera steriliseerimine - sõltub koera kaalust <br/> (hinnale lisandub valuvaigisti)</td>
+            <td>{t("prices.dogster")}</td>
             <td>224€ - 357€</td>
           </tr>
           <tr>
-            <td>Kassi kastreerimine<br/> (hinnale lisandub valuvaigisti)</td>
+            <td>{t("prices.catcast")}</td>
             <td>50€</td>
           </tr>
           <tr>
-            <td>Kassi steriliseerimine<br/> (hinnale lisandub valuvaigisti)</td>
+            <td>{t("prices.catster")}</td>
             <td>80€</td>
           </tr>
           <tr>
-            <td>Küüliku, närilise ja tuhkru steriliseerimine</td>
+            <td>{t("prices.othersster")}</td>
             <td>80€</td>
           </tr>
           <tr>
-            <td>Küüliku, närilise ja tuhkru kastreerimine</td>
+            <td>{t("prices.otherscast")}</td>
             <td>90€</td>
           </tr>
         </table>
-        <h3 className='prices-heading'>Kosmeetilised protseduurid</h3>
+        <h3 className='prices-heading'>{t("prices.cosmetical")}</h3>
         <table>
           <tr>
-            <td>Küünte lõikamine</td>
+            <td>{t("prices.nails")}</td>
             <td>8€</td>
           </tr>
           <tr>
-            <td>Kõrvade puhastamine</td>
+            <td>{t("prices.ears")}</td>
             <td>10€</td>
           </tr>
           <tr>
-            <td>Pärakupaunade puhastamine</td>
+            <td>{t("prices.analgland")}</td>
             <td>10€</td>
           </tr>
           <tr>
-            <td>Mikrokiipimine visiidi raames</td>
+            <td>{t("prices.chippingvisit")}</td>
             <td>14€</td>
           </tr>
           <tr>
-            <td>Mikrokiipimine</td>
+            <td>{t("prices.chipping")}</td>
             <td>25€</td>
           </tr>
           <tr>
-            <td>Hammaste lühendamine/lihvimine närilistel</td>
+            <td>{t("prices.teeth")}</td>
             <td>10€</td>
           </tr>
         </table>
-        <p className='more-information'>Lisainformatsiooni teenuste kohta saab kliiniku üldtelefonilt 6467084.</p>
+        <p className='more-information'>{t("services.information")}</p>
         </div>
     </div>
   )

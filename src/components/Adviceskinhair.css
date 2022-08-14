@@ -10,6 +10,7 @@
 .skinhair-wrapper p, .nutrition-wrapper p, .parasites-wrapper p, .wrapper p{
     width: 90%;
     margin: 2% auto;
+    white-space: pre-wrap;
 }
 h2{
     margin-top: 5%;

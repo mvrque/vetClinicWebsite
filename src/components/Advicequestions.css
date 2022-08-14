@@ -18,8 +18,13 @@
 }
 
 .answer{
-    border: px solid red;
+
     
     display: flex;
     align-items: center;
+}
+@media screen and (max-width: 960px) {
+    .question{
+        height: 100%;
+    }
 }

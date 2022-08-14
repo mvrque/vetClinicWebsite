@@ -54,6 +54,12 @@ function Navbar() {
                         {t("navbar.products")}
                         </Link>
                     </li>
+                    
+                    <li className='nav-item'>
+                        <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
+                        {t("navbar.news")}
+                        </Link>
+                    </li>
                     <li className='advice-nav nav-item'>
                         <Link to='/advicevisiting' className='nav-links' onClick={closeMobileMenu} //</li>onMouseEnter={e => {setStyle({display:'block'});}} onMouseLeave={e => {setStyle({display: 'none'})}} 
                         >{t("navbar.advice")}
@@ -69,11 +75,6 @@ function Navbar() {
                                 <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
                                 <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
                             </ul>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
-                        {t("navbar.news")}
-                        </Link>
                     </li>
                     
                 </ul>

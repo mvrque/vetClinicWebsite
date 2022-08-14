@@ -1,11 +1,10 @@
 .main-container{
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: space-evenly ;
 }
 
-.advice-visiting-list {
-    border: px solid black;
+.advice-list-wrapper {
+   
     width: 55%;
 }
 h2{
@@ -13,4 +12,24 @@ h2{
     color: #377036;
     text-align: center;
     margin: 2% 0;
+}
+.dogrunning{
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .advice-list-wrapper{
+        width: 80%;
+        height: 500px;
+    }
+    .dogrunning{
+        width: 80%;
+    }
+    .image-wrapper{
+        text-align: center;
+    }
 }

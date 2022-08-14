@@ -8,6 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 999; 
+    
   }
 
   .navbar-container {
@@ -160,6 +161,7 @@
       left: -100%;
       opacity: 1;
       transition: all 0.5s ease;
+      margin-right: 0;
     }
   
     .nav-menu.active {
@@ -235,8 +237,14 @@
       margin-top: 0;
       margin-bottom: 10%;
     }
-    .advice-nav:hover, .nav-menu{
-      grid-template-columns: repeat(7, auto);
+    .nav-item{
+      height: 70px;
+    }
+    .nav-menu.active{
+     
+    }
+    .advice-nav:hover{
+      
     }
     
   }
