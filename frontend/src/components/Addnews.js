@@ -1,15 +1,30 @@
-import React, {useState} from 'react'
-import Axios from "axios"
+import React, { useState, useEffect } from 'react'
+import Axios from "axios";
 
 
 function Addnews() {
     const [newsHeader , setNewsHeading] = useState("");
     const [newsDescription, setDescription] = useState("");
+
+    const [newsList, setNewsList] = useState([])
+
+    useEffect(() => {
+        Axios.get("http://localhost:3001/read").then((response) => {
+            setNewsList(response.data)
+        })
+    }, [])
+    const reversedList = newsList.reverse()
+
     const addNews = () => {
-        Axios.post("http://localhost:3001/insert", {
+        Axios.post("http://localhost:3001/insert",{
             newsHeader: newsHeader,
             newsDescription: newsDescription,
-        }) 
+        })
+        console.log(newsHeader + newsDescription) 
+    }
+
+    const deleteNews = (id) => {
+        Axios.delete(`http://localhost:3001/delete${id}`)
     }
   return (
     <div className="addnews-container">
@@ -33,6 +48,18 @@ function Addnews() {
                 setDescription(event.target.value)
             }} />         
             <button onClick={addNews}>Lisa uudis!</button>
+
+            
+        </div>
+        <h1>Uudised</h1>
+        <div className='news-container'>
+        {reversedList.map((val, key) => {
+            return <div className='one-news' key={key}>
+                <h1>{val.newsHeader}</h1>
+                <p> {val.newsDescription} </p>
+                <button onClick={() => deleteNews(val._id)}>KUSTUTA</button>
+            </div>
+        })}
         </div>
     </div>
   )

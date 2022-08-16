@@ -5,6 +5,9 @@ const NewsSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    newsDate: {
+        type:String,
+    },
     newsDescription: {
         type: String,
         required:true,

@@ -77,8 +77,6 @@ function Admin() {
   return (
     <div className="app">
       <div className="login-form">
-        LISA UUDIS SIIT
-        <div className="title">Sign In</div>
         {isSubmitted ? 
         <div className='addnews-container'>
             <Addnews />
