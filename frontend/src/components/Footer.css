@@ -1,8 +1,12 @@
+.footer{
+    height: 300px;
+}
+
 .footer-container {
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 30px;
     overflow-y: hidden;
     border: 1px solid black;
 }
@@ -13,7 +17,7 @@
 }
 .footer-wrapper {
     width: 100%;
-    border: 1px solid red;
+    border:0;
 }
 
 .footer-link-items, .footer-worktime-items, .footer-contact-items {
@@ -24,20 +28,46 @@
     width: 300px;
     box-sizing: border-box;
 }
-.footer-worktime-items{
-    width: 200px;
+.footer-worktime-items span {
+    font-size: 0.9rem;
+}
+.footer-contact-items{
+    border: 1px solid black;
 }
 
-.footer-contact-items :link { 
-    margin-top: 5%;
-    text-decoration: none;   
+.footer-worktime-items{
+    width: 200px;
+    border: 1px solid black;
+}
+
+.footer-wrapper h2 {
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.footer-contact-items > :link { 
+    text-decoration: none; 
+    color: black; 
+    width: 50%;
+    margin: 2px auto 25px auto;
+}
+.footer-contact-items a{
+    color: black;
+}
+.footer-contact-items a:hover{
+    color: #377036
 }
 
 .worktime-info {
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: space-around;
+    text-align:justify;   
+}
+.register-phone {
+    margin-top: 15px;
+    text-align: center;
 }
 
 .working-days{
@@ -50,15 +80,17 @@
     margin-left: 10px;
 }
 
-.footer-link-items h2, .footer-worktime-items h2, .footer-contact-items h2 {
+.footer-link-items h2, .footer-worktime-items h2 {
     margin-bottom: 16px;
 }
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     
 }
 
@@ -75,19 +107,45 @@
 }
 
 .footer-advice{
-    border: 1px solid black;
+    border: px solid black;
 }
+
 .footer-advice-list{
     list-style: none;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;   
 }
+
+.footer-advice-list li {
+    margin-bottom: 0px;
+}
+
 .footer-advice-list a{
     text-decoration: none;
     color: black;
+    font-size: 0.8rem;
 }
+
 .footer-advice-list a:hover{
     text-decoration: none;
     color:#377036;
+}
+
+.latest-news-container{
+    border: 1px solid black;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.latest-news-wrapper{
+    text-align: justify;
+}
+
+.latest-news-wrapper h2 {
+    color: black;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width : 960px){

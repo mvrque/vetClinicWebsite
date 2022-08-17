@@ -17,7 +17,7 @@ function Home () {
             <SomeServices />
             <AboutUs />
             <Specific />
-            <SomeNews />
+            
             <Footer></Footer>
             
         </>

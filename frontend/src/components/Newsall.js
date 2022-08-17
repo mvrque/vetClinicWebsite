@@ -12,9 +12,8 @@ function Newsall() {
     })
 }, [])
   const reversedList = newsList.reverse()
-  console.log(newsList)
   return (
-    <div>
+    <div className='news-main'>
         <h2>Uudised</h2>
         <div className='news-container'>
         {reversedList.map((val, key) => {
