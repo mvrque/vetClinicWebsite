@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose")
 const cors = require("cors")
 const app = express();
+var distDir = __dirname + "/dist/";
+ app.use(express.static(distDir));
 
 const NewsModule = require('./models/News')
 
@@ -46,6 +48,6 @@ app.delete("/delete/:id", async (req, res) =>{
   res.send('deleted')
 })
   
-app.listen(3001, () => {
+app.listen(80, () => {
   console.log("Running on 3001. Go CATCH ME")
 })
