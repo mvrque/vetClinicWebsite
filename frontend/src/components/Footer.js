@@ -13,21 +13,21 @@ function Footer() {
         setNewsList(response.data)
     })
     }, [])
-    console.log(newsList.length-1)
+    console.log(newsList)
 
     
     return (
     <div className='footer'>
         <div className='footer-container'>
             <div className='footer-wrapper'>
-            <div className='latest-news-container'>
+            {/*<div className='latest-news-container'>
                     <h2>Viimased uudised</h2>
                     <div className='latest-news-wrapper'>
                         {<h2 className='latest-news-header'>{newsList[newsList.length-1].newsHeader}</h2>}
                         {<p>{newsList[newsList.length-1].newsDescription}</p>}
-                    </div>
-                   
                 </div>
+                   
+                </div>*/}
                 <div className='footer-worktime-items'>
                     <h2>Avatud</h2>
                     <div className='worktime-info'>
@@ -62,7 +62,21 @@ function Footer() {
                        
                 </div> 
                 
-                
+                <div className='footer-advice'>
+                    <ul className='footer-advice-list'>
+                        <li><Link to={'/questions'}>Korduma kippuvad küsimused</Link></li>
+                        <li ><Link to={'/advicevisiting'}>Nõuandeid loomakliiniku külastamiseks</Link></li>
+                        <li ><Link to={'/adviceskinhair'}>Nahk ja karvastik</Link></li>
+                        <li ><Link to={'/advicenutrition'}>Toitmisest</Link></li>
+                        <li ><Link to={'/adviceparasites'}>Parasiidid</Link></li>
+                        <li ><Link to={'/adviceurinarystone'}>Kasside kusekivid</Link></li>
+                        <li ><Link to={'/advicefemalecat'}>Emase kassi jooksuaeg</Link></li>
+                        <li ><Link to={'/advicemalecat'}>Isase kassi jooksuaeg</Link></li>
+                        <li ><Link to={'/advicelymedisease'}>Puukborrelioos</Link></li>
+                           
+                    </ul>
+
+                </div>
             </div>
             
 
@@ -83,24 +97,10 @@ function Footer() {
                 </div>
             </section>*/}
             
-
+            
             
         </div>
-        <div className='footer-advice'>
-                    <ul className='footer-advice-list'>
-                        <li><Link to={'/questions'}>Korduma kippuvad küsimused</Link></li>
-                        <li ><Link to={'/advicevisiting'}>Nõuandeid loomakliiniku külastamiseks</Link></li>
-                        <li ><Link to={'/adviceskinhair'}>Nahk ja karvastik</Link></li>
-                        <li ><Link to={'/advicenutrition'}>Toitmisest</Link></li>
-                        <li ><Link to={'/adviceparasites'}>Parasiidid</Link></li>
-                        <li ><Link to={'/adviceurinarystone'}>Kasside kusekivid</Link></li>
-                        <li ><Link to={'/advicefemalecat'}>Emase kassi jooksuaeg</Link></li>
-                        <li ><Link to={'/advicemalecat'}>Isase kassi jooksuaeg</Link></li>
-                        <li ><Link to={'/advicelymedisease'}>Puukborrelioos</Link></li>
-                           
-                    </ul>
-
-                </div>
+       
     </div>
     
     

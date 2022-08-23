@@ -48,6 +48,6 @@ app.delete("/delete/:id", async (req, res) =>{
   res.send('deleted')
 })
   
-app.listen(80, () => {
+app.listen(3001, () => {
   console.log("Running on 3001. Go CATCH ME")
 })
