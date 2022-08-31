@@ -113,7 +113,7 @@
   
   },
   
-  "proxy": "http://localhost:5000",
+
   
   "eslintConfig": {
   

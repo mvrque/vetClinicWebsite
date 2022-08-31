@@ -1,21 +1,25 @@
-.footer{
-    
+.footer {
+    margin-top: 20px;
+    background-color: #cbb47f;
 }
 
 .footer-container {
-    background-color: rgb(255, 255, 255);
+    
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    overflow-y: hidden;
-    border: 1px solid black;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 30px;
+    
+    border: px solid black;
+    height: 320px;
+    
     
 }
 
 .footer-link-wrapper, .footer-wrapper {
     display: flex; 
-    justify-content: center;
-    background-color: #b3b4b3;;
+    justify-content: space-evenly;
+    
 }
 .footer-wrapper {
     width: 100%;
@@ -34,23 +38,35 @@
     font-size: 0.9rem;
 }
 .footer-contact-items{
-    border: 1px solid black;
+    border: 0px solid black;
+    font-size: 1.1rem;
+
 }
 
 .footer-worktime-items{
     width: 200px;
-    border: 1px solid black;
+    border: 0px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -10px;
+    height: 250px;
+    font-size: 1.3rem;
+
 }
 
 .footer-wrapper h2 {
-    font-size: 1.4rem;
+    color: #377036;
+    font-size: 1.8rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-
+.fab{
+    font-size: 1.5rem;
+}
 .footer-contact-items > :link { 
     text-decoration: none; 
-    color: black; 
+    color: rgb(15, 5, 5); 
     width: 50%;
     margin: 2px auto 25px auto;
 }
@@ -58,10 +74,13 @@
     color: black;
 }
 .footer-contact-items a:hover{
-    color: #377036
+    color: #377036;
+    font-size: 1.2rem;
+
 }
 
 .worktime-info {
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -70,6 +89,7 @@
 .register-phone {
     margin-top: 15px;
     text-align: center;
+
 }
 
 .working-days{
@@ -86,6 +106,7 @@
     margin-bottom: 16px;
 }
 
+
 .social-icons {
     display: flex;
     justify-content: space-evenly;
@@ -93,8 +114,8 @@
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
-    
 }
+
 
 .social-logo {
     color: #377036;
@@ -109,15 +130,19 @@
 }
 
 .footer-advice{
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 .footer-advice-list{
     list-style: none;
     text-align: center;
     display: flex;
-    justify-content: space-evenly;  
     flex-direction: column; 
+    justify-content: space-evenly;
+    border: 0px solid black;
+    height: 250px;
+    width: 375px;
+    
 }
 
 .footer-advice-list li {
@@ -127,12 +152,14 @@
 .footer-advice-list a{
     text-decoration: none;
     color: black;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .footer-advice-list a:hover{
     text-decoration: none;
     color:#377036;
+    font-size: 1.1rem;
+
 }
 
 .latest-news-container{
@@ -183,6 +210,9 @@
         font-size: 14px;
         width: 120%;
        
+    }
+    .footer-worktime-items{
+        display: none;
     }
     
     .call-us {

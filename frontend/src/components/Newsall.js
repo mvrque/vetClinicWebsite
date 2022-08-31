@@ -7,7 +7,7 @@ import './Newsall.css'
 function Newsall() {
   const [newsList, setNewsList] = useState([])
   useEffect(() => {
-    Axios.get("http://localhost:3001/read").then((response) => {
+    Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
         setNewsList(response.data)
     })
 }, [])

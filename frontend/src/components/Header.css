@@ -39,12 +39,21 @@
     
 }
 
-
+.language-container{
+    border: 1px solid white;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
 .language-change{
     margin-top: 9px;
-    width: 32px;
+    width: 25px;
+    background-color: #000000;
     
-    
+}
+.language-container button {
+    background-color: black;
+    border: none;
 }
 
 
@@ -63,11 +72,17 @@
     }
     .header-wrap{
         display: flex;
+        justify-content: space-around;
         
+    }
+    
+    .header-location{
+       margin-left: -100px;
     }
    
     .company-time {
         font-size: 0.7rem;
         margin-right: 80px;
+        display: none;
     }
 }

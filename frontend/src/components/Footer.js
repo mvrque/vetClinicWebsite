@@ -9,7 +9,7 @@ import Axios from "axios";
 function Footer() {
     const [newsList, setNewsList] = useState([])
     useEffect(() => {
-    Axios.get("http://localhost:3001/read").then((response) => {
+    Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
         setNewsList(response.data)
     })
     }, [])
@@ -47,14 +47,13 @@ function Footer() {
                 <div className='footer-contact-items'>
                         <h2>Kontakt</h2>
                         <div className='social-icons'>
-                            <Link href='www.facebook.com'  className='social-icon-link facebook'  to='/'
-                            target='_blank' aria-label='Facebook'>
+                            <a href="https://www.facebook.com/tatari.loomakliinik" target="_blank" rel="noreferrer">
                                 <i className='fab fa-facebook-f' />
-                            </Link>
-                            <Link className='social-icon-link instagram' to='/'
-                            target='_blank' aria-label='Instagram'>
+                            </a>
+                            <a href="https://www.instagram.com/tatariloomakliinik/" target="_blank" rel="noreferrer">
+
                                 <i className='fab fa-instagram' />
-                            </Link>
+                            </a>
                         </div>
                         <Link to='/About'><i className="bi bi-geo-alt"></i>Tatari 3, Tallinn</Link>
                         <Link to='/services'>+372 646 7084</Link>
@@ -64,6 +63,7 @@ function Footer() {
                 
                 <div className='footer-advice'>
                     <ul className='footer-advice-list'>
+                        <h2>Nõuanded</h2>
                         <li><Link to={'/questions'}>Korduma kippuvad küsimused</Link></li>
                         <li ><Link to={'/advicevisiting'}>Nõuandeid loomakliiniku külastamiseks</Link></li>
                         <li ><Link to={'/adviceskinhair'}>Nahk ja karvastik</Link></li>

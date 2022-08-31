@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Axios from "axios";
 
 
+
 function Addnews() {
     const [newsHeader , setNewsHeading] = useState("");
     const [newsDescription, setDescription] = useState("");
@@ -9,14 +10,14 @@ function Addnews() {
     const [newsList, setNewsList] = useState([])
 
     useEffect(() => {
-        Axios.get("http://localhost:3001/read").then((response) => {
+        Axios.get("/read").then((response) => {
             setNewsList(response.data)
         })
     }, [])
     const reversedList = newsList.reverse()
 
     const addNews = () => {
-        Axios.post("http://localhost:3001/insert",{
+        Axios.post("/insert",{
             newsHeader: newsHeader,
             newsDescription: newsDescription,
         })
@@ -24,7 +25,7 @@ function Addnews() {
     }
 
     const deleteNews = (id) => {
-        Axios.delete(`http://localhost:3001/delete${id}`)
+        Axios.delete(`/delete${id}`)
     }
   return (
     <div className="addnews-container">
