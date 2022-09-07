@@ -40,6 +40,7 @@
 .footer-contact-items{
     border: 0px solid black;
     font-size: 1.1rem;
+    padding-top: 5px;
 
 }
 
@@ -49,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: -10px;
+    
     height: 250px;
     font-size: 1.3rem;
 
@@ -69,14 +70,23 @@
     color: rgb(15, 5, 5); 
     width: 50%;
     margin: 2px auto 25px auto;
+    height: 25px;
 }
 .footer-contact-items a{
     color: black;
+    
 }
 .footer-contact-items a:hover{
     color: #377036;
     font-size: 1.2rem;
 
+}
+.footer-contact-items i {
+    height: 40px;
+    width: 20px;
+}
+.footer-contact-items i:hover {
+    font-size: 1.9rem;
 }
 
 .worktime-info {
@@ -84,7 +94,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    text-align:justify;   
+    text-align:justify; 
+      
 }
 .register-phone {
     margin-top: 15px;
@@ -203,19 +214,42 @@
     .footer-links{
         display: none;
     }
+    .footer-contact-items{
+        width: 200px;
+        
+    }
 
 }
 @media screen and (max-width: 550px){
     .footer-wrapper {
         font-size: 14px;
-        width: 120%;
+        width: 100%;
+        justify-content: center;
+        height: 300px;
        
     }
     .footer-worktime-items{
         display: none;
     }
     
-    .call-us {
+    .footer-contact-items{
+        width: 200px;
+        
+    }
+    
+
+    .footer-contact-items :link {
+        font-size: 1.1rem;
+       
+        width: 100%;
+    }
+    .footer-advice-list{
+        width: 200px;
+        height: 280px;
+
+    }
+    .footer-advice-list :link {
+        font-size: 0.9rem;
         
     }
 }

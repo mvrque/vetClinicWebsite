@@ -9,15 +9,15 @@ import 'react-slideshow-image/dist/styles.css';
 const slideImages = [
     {
       url: '/galerii1.jpeg',
-      caption: 'Slide 1',
+      caption: '',
     },
     {
       url: '/galerii2.jpeg',
-      caption: 'Slide 2'
+      caption: ''
     },
     {
       url: '/galerii3.jpeg',
-      caption: 'Slide 3'
+      caption: ''
     },
   ];
   
@@ -41,8 +41,7 @@ export default function Aboutinpage(){
                 <MapContainer className='map'/>
 
             </div>
-            <div className='about-wrapper'>
-                
+            <div className='about-wrapper'> 
                 <div className='about-description'>
                     <h2 className='family-heading'>Meie perekond</h2>
                     <h3>Andrus Joost - loomaarst ja kliiniku juhataja</h3>
@@ -59,6 +58,16 @@ export default function Aboutinpage(){
                     <img className='housepic' src='/tatarimaja.jpg' alt='.'/>
                 </div>
             </div>
+            <div className='partners-container'>
+                <h2>Täname meie partnereid!</h2>
+                <div className='partners-wrapper'>
+                    <img className='partner' src='/ifLogo.jpeg'/>
+                    <img className='partner' src='/dimedumLogo.jpg'/>
+                    <img className='partner' src='/kelmikulaLogo.png'/>
+                    <img className='partner' src='/laboklinLogo.jpeg'/>
+                    <img className='partner' src='/loomakaitseLogo.png'/>
+                </div>
+            </div>
             
             <div className="slide-container">
                 <Slide>
@@ -71,16 +80,7 @@ export default function Aboutinpage(){
                 ))} 
                 </Slide>
             </div>
-            <div className='partners-container'>
-                <h2>Täname meie partnereid!</h2>
-                <div className='partners-wrapper'>
-                    <img className='partner' src='/ifLogo.jpeg'/>
-                    <img className='partner' src='/dimedumLogo.jpg'/>
-                    <img className='partner' src='/kelmikulaLogo.png'/>
-                    <img className='partner' src='/laboklinLogo.jpeg'/>
-                    <img className='partner' src='/loomakaitseLogo.png'/>
-                </div>
-            </div>
+            
         </div>
     </div>
 )}

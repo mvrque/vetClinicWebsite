@@ -56,8 +56,8 @@ function Footer() {
                             </a>
                         </div>
                         <Link to='/About'><i className="bi bi-geo-alt"></i>Tatari 3, Tallinn</Link>
-                        <Link to='/services'>+372 646 7084</Link>
-                        <Link to='/products'>tlk@tatari.ee</Link>
+                        <Link className='mobiĺe-phone' to='/About'>+372 646 7084</Link>
+                        <Link to='/About'>tlk@tatari.ee</Link>
                        
                 </div> 
                 

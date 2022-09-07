@@ -79,6 +79,7 @@
   .hero-container-wrapper{
     display: flex;
     justify-content: center;
+    margin: 0;
   }
   .hero-btns{
     margin: 10px auto;
@@ -98,23 +99,20 @@
     justify-content: center;
     height:500px;
     text-align: center;
-    border: px solid black;
 
   }
   .hero-container-wrapper{
-    border: px solid black;
     width: 70%;
     display: flex;
     justify-content: center;
   }
   .hero-container h1 {
-    font-size: 40px; 
+    font-size: 35px; 
   }
   .hero-container p {
     font-size: 20px;
   }
   .hero-btns{
-    border: px solid black;
     margin: 10px auto;
   }
   .btn {
