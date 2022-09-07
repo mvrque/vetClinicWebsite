@@ -40,7 +40,7 @@
 }
 
 .language-container{
-    border: 1px solid white;
+    border: 0px solid white;
     width: 100px;
     display: flex;
     justify-content: space-evenly;
