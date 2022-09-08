@@ -7,6 +7,7 @@ import {
   TwitterShareButton,
   LinkedinShareButton
 } from "react-share";
+import {FacebookIcon} from "react-share";
 
 
 //const { ShareButton} = require('react-custom-share');
@@ -37,10 +38,13 @@ function Newsall() {
                 <h1>{val.newsHeader}</h1>
                 <p> {val.newsDescription} </p>
                 <FacebookShareButton 
-                url='https://www.twitter.com'
+                url='https://www.tataritest.netlify.com'
                 quote={"フェイスブックはタイトルが付けれるようです"}
                 hashtag={"#hashtag"}
-                description={"aiueo"}>JO</FacebookShareButton>
+                description={"aiueo"}><FacebookIcon />
+                
+                </FacebookShareButton>
+                
                 
             </div>
         })}
