@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios";
-import './Newsall.css'
-import { ShareButton } from "react-custom-share";
+import './Newsall.css';
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton
+} from "react-share";
 
+
+//const { ShareButton} = require('react-custom-share');
 
 
 function Newsall() {
+  
   const shareButtonProps = {
     url: "https://www.tataritest.netlify.com",
     network: "Facebook",
@@ -28,9 +36,12 @@ function Newsall() {
             return <div className='one-news' key={key}>
                 <h1>{val.newsHeader}</h1>
                 <p> {val.newsDescription} </p>
-                <ShareButton {...shareButtonProps}>
-                  jou
-                </ShareButton>
+                <FacebookShareButton 
+                url='https://www.twitter.com'
+                quote={"フェイスブックはタイトルが付けれるようです"}
+                hashtag={"#hashtag"}
+                description={"aiueo"}>JO</FacebookShareButton>
+                
             </div>
         })}
         </div>
