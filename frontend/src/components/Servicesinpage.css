@@ -1,27 +1,38 @@
+
 .services-container{
     margin: 2% 0;
-   
-    
+    border: 0px solid black;
+    width: 100%;
+    padding: 0;
 }
 .services-container h2{
     text-align: center;
     font-size: 2.5rem;
     color: #377036;
     margin-bottom: 2%;
+    border: 0px solid black;
 }
 .services-container p {
     text-align: center;
     font-size: 1rem;
     color: black;
     margin-top: 2%;
-    
 }
+
 .services-wrapper{
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 100%;
+    border: 0px solid black;
+    
+
+    
+    
 }
 .service {
+    border:0px solid black;
     height: 100px;
     width: 200px;
     margin-bottom: 1%;
@@ -31,6 +42,8 @@
     justify-content: center;
     background-color: #ffffff;
     color: #000000;
+    position: relative;
+    
 }
 
 .service-icon{
@@ -43,18 +56,20 @@
     font-size: 1rem;
     width: 100%;
     margin-top: 5%;
-    position: absolute;
+    
 }
 break {
     flex-basis: 100%;
     width: 0px; 
     height: 0px; 
     overflow: hidden;
+    border: 0px solid black;
+    
   }
 
   @media screen and (max-width: 960px) {
     .service{
-        border: 1px solid  black;
+        border: 0px solid  black;
         width: 150px;
     }
     .service h3{
@@ -62,6 +77,6 @@ break {
         
     }
     .service-icon{
-        padding-bottom: 30px;
+        padding-bottom: 0px;
     }
   }

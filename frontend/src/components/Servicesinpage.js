@@ -11,7 +11,7 @@ function Servicesinpage() {
     <div className='services-container'>
         <h2>{t("services.header")}</h2>
         <p></p>
-
+        <div className='test-wrapper'>
         <div className='services-wrapper'>
             <div className='service'>
                 <i className="service-icon fas fa-heartbeat"/>
@@ -45,6 +45,7 @@ function Servicesinpage() {
             <div className='service'>
               <i className="service-icon fas fa-tooth"/>
               <h3>{t("services.teeth")}</h3></div>   
+        </div>
         </div>
         <p>{t("services.information")}</p>
     </div>

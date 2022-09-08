@@ -8,17 +8,16 @@ function Newsinhome() {
     useEffect(() => {
         Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
             setNewsList(response.data)
+            
         })
     }, [])
     const reversedList = newsList.reverse()
-    console.log(reversedList)
+    console.log(newsList)
   return (
     <div className='home-news-container'>
-        
-        
             <div className='home-one-news'>
-                <h1>{reversedList[0].newsHeader}</h1>
-                <p> {reversedList[0].newsDescription} </p>
+                <h1></h1>
+                <p></p>
             </div>
         
         

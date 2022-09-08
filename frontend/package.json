@@ -75,10 +75,16 @@
   "react-axios": "^2.0.6",
   
     
+  "react-custom-share": "^0.4.8",
+  
+    
   "react-dom": "^18.1.0",
   
     
   "react-i18next": "^11.18.3",
+  
+    
+  "react-icons": "^4.4.0",
   
     
   "react-router-dom": "^6.3.0",
@@ -112,8 +118,6 @@
   "serverStart": "node server.js"
   
   },
-  
-
   
   "eslintConfig": {
   

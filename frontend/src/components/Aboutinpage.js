@@ -30,7 +30,7 @@ export default function Aboutinpage(){
             <p>Tatari Loomakliinik tegutseb 1995. aasta oktoobrikuust Tallinna kesklinnas, aadressil Tatari 3. Selle ajaga on dr. Andrus Joost oma tubli tööga teinud kliinikust ühe juhtiva asutuse tänapäeval populaarseteks muutunud eksootiliste lemmikloomade (närilised, linnud, reptiilid jms.) ravis ja hooldamises. Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga.</p>
             <div className='map-container'>
                 <div className='phone-mail-container'> 
-                    <ButtonMailto mailto="mailto:tlk@tatari.ee" className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
+                    <ButtonMailto mailto="mailto:tlk@tatari.ee" className='btns mailbtn' buttonStyle='btn--primary' buttonSize='btn--large'>
                         Kirjuta meile
                     </ButtonMailto>
                     <button className='call-us'>
