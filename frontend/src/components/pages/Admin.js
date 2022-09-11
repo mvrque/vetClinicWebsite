@@ -1,23 +1,16 @@
 import React, {useState} from 'react'
 import { ReactDOM } from 'react-dom';
 import Addnews from '../Addnews';
-import './Admin.css'
+import './Admin.css';
+import Database from '../Adminpassword.json'
+
 
 function Admin() {
     const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+  const info = Database.auth
+  console.log(info)
   // User Login info
-  const database = [
-    {
-      username: "user1",
-      password: "pass1"
-    },
-    {
-      username: "user2",
-      password: "pass2"
-    }
-  ];
 
   const errors = {
     uname: "invalid username",
@@ -29,13 +22,12 @@ function Admin() {
     event.preventDefault();
 
     var { uname, pass } = document.forms[0];
-
     // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
+    const userData = info
+    
     // Compare user info
     if (userData) {
-      if (userData.password !== pass.value) {
+      if (info.password !== pass.value) {
         // Invalid password
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
@@ -45,8 +37,9 @@ function Admin() {
       // Username not found
       setErrorMessages({ name: "uname", message: errors.uname });
     }
+    console.log(userData)
   };
-
+  
   // Generate JSX code for error message
   const renderErrorMessage = (name) =>
     name === errorMessages.name && (

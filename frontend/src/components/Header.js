@@ -35,6 +35,7 @@ function Header() {
                         <img className='language-change' src='./russia.jpg' alt='estonian flag'></img>
                     </button>
                 </div>
+                <Link to='/admin' className='log-in-btn' >LOG-IN</Link>
             </div>
         </div>
     </div>

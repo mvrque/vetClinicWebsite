@@ -38,7 +38,7 @@ function Newsall() {
                 <h1>{val.newsHeader}</h1>
                 <p> {val.newsDescription} </p>
                 <FacebookShareButton 
-                url='https://www.tataritest.netlify.com'
+                url='https://www.tataritest.netlify.app'
                 quote={"フェイスブックはタイトルが付けれるようです"}
                 hashtag={"#hashtag"}
                 description={"aiueo"}><FacebookIcon />
