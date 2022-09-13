@@ -10,14 +10,14 @@ function Addnews() {
     const [newsList, setNewsList] = useState([])
 
     useEffect(() => {
-        Axios.get("/read").then((response) => {
+        Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
             setNewsList(response.data)
         })
     }, [])
     const reversedList = newsList.reverse()
 
     const addNews = () => {
-        Axios.post("/insert",{
+        Axios.post("https://tatarinews.herokuapp.com/insert",{
             newsHeader: newsHeader,
             newsDescription: newsDescription,
         })
@@ -25,7 +25,7 @@ function Addnews() {
     }
 
     const deleteNews = (id) => {
-        Axios.delete(`/delete${id}`)
+        Axios.delete(`https://tatarinews.herokuapp.com/delete/${id}`)
     }
   return (
     <div className="addnews-container">

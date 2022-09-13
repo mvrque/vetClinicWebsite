@@ -16,6 +16,9 @@ h2{
 .dogrunning{
     width: 100%;
 }
+.advice-nav-list{
+    display: none;
+}
 
 @media screen and (max-width: 960px) {
     .main-container{
@@ -31,5 +34,54 @@ h2{
     }
     .image-wrapper{
         text-align: center;
+    }
+    
+    .advice-nav-list{
+        display:block;
+        margin: 2%;
+        
+    }
+    
+    .advice-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        
+        
+    }
+    .advice-item:hover{
+        background-color: ;
+        
+    }
+    .advice-link{
+        width: 100%;
+        text-decoration: none;
+        color: #377036;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+    .advices {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .advice-link:hover{
+        transform: scale(1.05);
+    }
+    .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: px solid black;
+    }
+    .left .advice-item {
+        
+    }
+    .right {
+        
+        
     }
 }

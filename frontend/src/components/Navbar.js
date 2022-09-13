@@ -60,20 +60,20 @@ function Navbar() {
                         {t("navbar.news")}
                         </Link>
                     </li>
-                    <li className='advice-nav nav-item'>
+                    <li className='advice-nav nav-item' onClick={handleClick}>
                         <Link to='/advicevisiting' className='nav-links' onClick={closeMobileMenu} //</li>onMouseEnter={e => {setStyle({display:'block'});}} onMouseLeave={e => {setStyle({display: 'none'})}} 
                         >{t("navbar.advice")}
                         </Link>
                             <ul className='on-hover'>
-                                <li className='advice-item'><Link className='advice-link' to={'/questions'}>{t("advicenav.questions")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicevisiting'}>{t("advicenav.advicevisiting")}</Link></li>
-                                <li className='advice-item'><Link  className='advice-link' to={'/adviceskinhair'} onClick={closeMobileMenu}>{t("advicenav.adviceskinhair")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicenutrition'}>{t("advicenav.advicenutrition")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/adviceparasites'}>{t("advicenav.adviceparasites")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>{t("advicenav.adviceurinarystone")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicefemalecat'}>{t("advicenav.advicefemalecat")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
-                                <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/questions'}>{t("advicenav.questions")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/advicevisiting'}>{t("advicenav.advicevisiting")}</Link></li>
+                                <li className='nav-advice-item'><Link  className='advice-link' to={'/adviceskinhair'} onClick={closeMobileMenu}>{t("advicenav.adviceskinhair")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/advicenutrition'}>{t("advicenav.advicenutrition")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/adviceparasites'}>{t("advicenav.adviceparasites")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>{t("advicenav.adviceurinarystone")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/advicefemalecat'}>{t("advicenav.advicefemalecat")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
+                                <li className='nav-advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
                             </ul>
                     </li>
                     

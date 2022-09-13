@@ -69,6 +69,9 @@
     .tel-nr{
         display: none;
     }
+    .log-in-btn {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 399px) {

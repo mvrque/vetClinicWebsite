@@ -5,6 +5,8 @@ import MapContainer from './Map';
 import ButtonMailto from './ButtonMailto';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import {useTranslation} from "react-i18next";
+
 
 const slideImages = [
     {
@@ -23,15 +25,16 @@ const slideImages = [
   
 
 export default function Aboutinpage(){
+    const {t, i18n} = useTranslation('common');
     return (
     <div>   
         <div className='about-page-container'>
-            <h2>Tatari Loomakliinik - aastast 1995</h2>
-            <p>Tatari Loomakliinik tegutseb 1995. aasta oktoobrikuust Tallinna kesklinnas, aadressil Tatari 3. Selle ajaga on dr. Andrus Joost oma tubli tööga teinud kliinikust ühe juhtiva asutuse tänapäeval populaarseteks muutunud eksootiliste lemmikloomade (närilised, linnud, reptiilid jms.) ravis ja hooldamises. Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga.</p>
+            <h2>{t("about.aboutinpage-heading")}</h2>
+            <p>{t("about.description")}</p>
             <div className='map-container'>
                 <div className='phone-mail-container'> 
                     <ButtonMailto mailto="mailto:tlk@tatari.ee" className='btns mailbtn' buttonStyle='btn--primary' buttonSize='btn--large'>
-                        Kirjuta meile
+                    {t("about.write-us")}
                     </ButtonMailto>
                     <button className='call-us'>
                         <a className='phone-nr' href="tel:+372 646 7084"  data-rel="external">+372 646 7084</a>
@@ -43,16 +46,16 @@ export default function Aboutinpage(){
             </div>
             <div className='about-wrapper'> 
                 <div className='about-description'>
-                    <h2 className='family-heading'>Meie perekond</h2>
-                    <h3>Andrus Joost - loomaarst ja kliiniku juhataja</h3>
-                    <p>Andrus Joost lõpetas EPMÜ Veterinaaria teaduskonna 1994. aastal. Tatari Loomakliiniku asutamisest (1995) peale on dr.Joost olnud kliiniku juhiks ja vedajaks.</p>
+                    <h2 className='family-heading'>{t("about.family")}</h2>
+                    <h3>{t("about.andrus")}</h3>
+                    <p>{t("about.andrus-desc")}</p>
 
-                    <h3>Katrin Vanem-Joost - loomaarst</h3>
-                    <p>Katrin Vanem on lõpetanud EPMÜ Veterinaaria teaduskonna 2000. aastal ja samast aastast töötab ta Tatari Loomakliinikus.</p>
+                    <h3>{t("about.katrin")}</h3>
+                    <p>{t("about.katrin-desc")}</p>
 
-                    <h3>Helerin Talpsepp - administraator</h3>
+                    <h3>{t("about.helerin")}</h3>
 
-                    <h3>Cetlin Jõgis - loomaarsti abiline</h3>
+                    <h3>{t("about.cetlin")}</h3>
                 </div>
                 <div className='house-pic-div'>
                     <img className='housepic' src='/tatarimaja.jpg' alt='.'/>

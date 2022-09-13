@@ -25,7 +25,17 @@
     "about":{
         "title": "WELCOME TO TATARI VETERINARY CLINIC",
         "description": "Tatari Veterinary Clinic, situated in the center of Tallinn, was established in October 1995. Since then dr. Andrus Joost has done an excellent job in turning the clinic into one of the leading institutions in the treatment and care of exotic pets (reptiles, rodents, birds etc.) as well as dogs, cats and other household pets. Tatari Veterinary Clinic is joined in partnerships with several animal rescue organizations.",
-        "services-btn": "SERVICES AND PRICES"
+        "services-btn": "SERVICES AND PRICES",
+        "aboutinpage-heading":"Tatari Veterinary Clinic - since 1995",
+        "write-us": "Write to us",
+        "family":"Our family",
+        "andrus":"Andrus Joost - veterinarian and head of the clinic",
+        "andrus-desc":"Andrus Joost graduated from EPMÜ Faculty of Veterinary Medicine in 1994. Since the establishment of the Tatar Animal Clinic (1995), Dr. Joost has been the manager and operator of the clinic.",
+        "katrin": "Katrin Vanem-Joost - veterinarian",
+        "katrin-desc":"Katrin Vanem graduated from the Faculty of Veterinary Medicine of EPMÜ in 2000 and has been working at Tatar Animal Clinic since the same year.",
+        "helerin": "Helerin Talpsepp - administrator",
+        "cetlin":"Cetlin Jõgis - veterinary assistant",
+        "thanks":"Thanks to our partners!"
     },
     "services":{
         "header": "Overview about services offered in Tatari Animal Clinic",

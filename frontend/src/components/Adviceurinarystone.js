@@ -1,9 +1,33 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Advicenav from './Advicenav'
+import {useTranslation} from "react-i18next";
+
+
 
 function Adviceurinarystone() {
+  const {t, i18n} = useTranslation('common');
+
   return (
     <div>
+      <div className='advice-nav-list'>
+          <ul className='advices'>
+            <div className='left'>
+              <li className='advice-item'><Link className='advice-link' to={'/questions'}>{t("advicenav.questions")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/advicevisiting'}>{t("advicenav.advicevisiting")}</Link></li>
+              <li className='advice-item'><Link  className='advice-link' to={'/adviceskinhair'} >{t("advicenav.adviceskinhair")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/advicenutrition'}>{t("advicenav.advicenutrition")}</Link></li>
+            </div>
+            <div className='right'>
+              <li className='advice-item'><Link className='advice-link' to={'/adviceparasites'}>{t("advicenav.adviceparasites")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>{t("advicenav.adviceurinarystone")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/advicefemalecat'}>{t("advicenav.advicefemalecat")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
+              <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
+
+            </div>
+          </ul>
+        </div>
         <h2>Kasside kusekivid</h2>
         <div className='wrapper'>
           <h4>Üks tilk, kaks tilka, kolm tilka…</h4>

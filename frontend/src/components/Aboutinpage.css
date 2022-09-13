@@ -48,7 +48,7 @@ h3 {
     font-size:1.2rem ;
 }
 .map-container{
-    border: 1px solid black;
+    border: 0px solid black;
     height: 430px;
     width: 100%;
     margin-top: 3%;
@@ -151,7 +151,7 @@ h3 {
         justify-content: space-evenly;
     }
     .about-description {
-        border: 1px solid black;
+        border: px solid black;
         width: 100%;
         margin-top: -20px;
     }

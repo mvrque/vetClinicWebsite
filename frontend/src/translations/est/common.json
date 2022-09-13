@@ -25,7 +25,17 @@
     "about":{
         "title": "TERE TULEMAST TATARI LOOMAKLIINIKUSSE!",
         "description": "Tatari Loomakliinik tegutseb 1995. aasta oktoobrikuust Tallinna kesklinnas, aadressil Tatari 3. Selle ajaga on dr. Andrus Joost oma tubli tööga teinud kliinikust ühe juhtiva asutuse tänapäeval populaarseteks muutunud eksootiliste lemmikloomade (närilised, linnud, reptiilid jms.) ravis ja hooldamises. Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga.",
-        "services-btn": "TEENUSED JA HINNAKIRI"
+        "services-btn": "TEENUSED JA HINNAKIRI",
+        "aboutinpage-heading":"Tatari Loomakliinik - aastast 1995",
+        "write-us": "Kirjuta meile",
+        "family":"Meie perekond",
+        "andrus":"Andrus Joost - loomaarst ja kliiniku juhataja",
+        "andrus-desc":"Andrus Joost lõpetas EPMÜ Veterinaaria teaduskonna 1994. aastal. Tatari Loomakliiniku asutamisest (1995) peale on dr.Joost olnud kliiniku juhiks ja vedajaks.",
+        "katrin": "Katrin Vanem-Joost - loomaarst",
+        "katrin-desc":"Katrin Vanem on lõpetanud EPMÜ Veterinaaria teaduskonna 2000. aastal ja samast aastast töötab ta Tatari Loomakliinikus.",
+        "helerin": "Helerin Talpsepp - administraator",
+        "cetlin":"Cetlin Jõgis - loomaarsti abiline",
+        "thanks":"Täname meie partnereid!"
     },
     "services":{
         "header": "Meie kliinikus pakutavad teenused",
