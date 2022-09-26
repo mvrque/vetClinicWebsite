@@ -15,16 +15,22 @@
 
 .question h4{
     color: white;
+    margin-left: 20px;
 }
 
 .answer{
-
-    
     display: flex;
     align-items: center;
+    padding-left: 20px;
+    margin: 10px 0;
+
 }
+
 @media screen and (max-width: 960px) {
     .question{
-        height: 100%;
+        height: 50px;
+    }
+    .bigger{
+        height: 70px;
     }
 }

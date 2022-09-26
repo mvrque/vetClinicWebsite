@@ -101,7 +101,11 @@ h3 {
     border-radius: 10px;
     width: 200px;
     height: 70px;
-    padding: 20px 26px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+     
 }
 .call-us:hover{
     background: #377036;;
@@ -119,7 +123,7 @@ h3 {
 }
 .call-us:hover a{
     
-    transform: scale(1.1);
+    
 }
 .slide-container{
     

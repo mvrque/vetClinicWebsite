@@ -36,9 +36,9 @@ export default function Aboutinpage(){
                     <ButtonMailto mailto="mailto:tlk@tatari.ee" className='btns mailbtn' buttonStyle='btn--primary' buttonSize='btn--large'>
                     {t("about.write-us")}
                     </ButtonMailto>
-                    <button className='call-us'>
+                    <a className='call-us' href="tel:+372 646 7084"  data-rel="external">
                         <a className='phone-nr' href="tel:+372 646 7084"  data-rel="external">+372 646 7084</a>
-                    </button>
+                    </a>
                     
                 </div>
                 <MapContainer className='map'/>

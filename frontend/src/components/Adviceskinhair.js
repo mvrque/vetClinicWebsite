@@ -8,6 +8,7 @@ function Adviceskinhair() {
   const {t, i18n} = useTranslation('common');
   return (
     <div className='skinhair-container'>
+      <Advicenav/>
         <h2>{t("adviceskin.header")}</h2>
         <div className='skinhair-wrapper'>
           <h4>{t("adviceskin.bacterial")}</h4>

@@ -51,13 +51,13 @@ function Admin() {
     <div className="form">
       <form className='usernamepassword' onSubmit={handleSubmit}>
         <div className="input-container">
-          <label>Username </label>
+          <label>Kasutajanimi</label>
           <input type="text" name="uname" required />
           {renderErrorMessage("uname")}
         </div>
         <div className="input-container">
-          <label>Password </label>
-          <input type="password" name="pass" required />
+          <label>Parool</label>
+          <input  type="password" name="pass" required />
           {renderErrorMessage("pass")}
         </div>
         <div className="button-container">

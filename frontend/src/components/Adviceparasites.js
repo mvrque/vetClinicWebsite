@@ -9,6 +9,7 @@ function Adviceparasites() {
 
   return (
     <div>
+      <Advicenav/>
         <h2>{t("parasites.header")}</h2>
         <div className='parasites-wrapper'>
           <h4>{t("parasites.header2")}</h4>

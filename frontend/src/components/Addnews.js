@@ -21,6 +21,7 @@ function Addnews() {
             newsHeader: newsHeader,
             newsDescription: newsDescription,
         })
+        window.location.reload(false);
         console.log(newsHeader + newsDescription) 
     }
 
@@ -37,7 +38,8 @@ function Addnews() {
                 type='text'
                 onChange={(event) =>{
                     setNewsHeading(event.target.value)
-                }}/>
+                }
+                }/>
             <label>Uudise kirjeldus</label>
             <textarea 
             className='description-container' 

@@ -7,13 +7,7 @@ import Axios from "axios";
 
 
 function Footer() {
-    const [newsList, setNewsList] = useState([])
-    useEffect(() => {
-    Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
-        setNewsList(response.data)
-    })
-    }, [])
-    console.log(newsList)
+    
 
     
     return (

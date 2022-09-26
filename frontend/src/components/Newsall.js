@@ -14,20 +14,33 @@ import {FacebookIcon} from "react-share";
 
 
 function Newsall() {
-  
-  const shareButtonProps = {
-    url: "https://www.tataritest.netlify.com",
-    network: "Facebook",
-    text: "Give it a try - react-custom-share component",
-    longtext:
-      "Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
-  };
   const [newsList, setNewsList] = useState([])
   useEffect(() => {
-    Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
+    Axios.get("https://tatarinews.herokuapp.com/read")
+    .then((response) => {
         setNewsList(response.data)
     })
-}, [])
+    .catch((error) => {
+      // Error
+      if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          // console.log(error.response.data);
+          // console.log(error.response.status);
+          // console.log(error.response.headers);
+      } else if (error.request) {
+          // The request was made but no response was received
+          // `error.request` is an instance of XMLHttpRequest in the 
+          // browser and an instance of
+          // http.ClientRequest in node.js
+          console.log(error.request);
+      } else {
+          // Something happened in setting up the request that triggered an Error
+          console.log('Error', error.message);
+      }
+      console.log(error.config);
+  })
+    }, [])
   const reversedList = newsList.reverse()
   return (
     <div className='news-main'>
@@ -37,15 +50,6 @@ function Newsall() {
             return <div className='one-news' key={key}>
                 <h1>{val.newsHeader}</h1>
                 <p> {val.newsDescription} </p>
-                <FacebookShareButton 
-                url='https://www.tataritest.netlify.app'
-                quote={"フェイスブックはタイトルが付けれるようです"}
-                hashtag={"#hashtag"}
-                description={"aiueo"}><FacebookIcon />
-                
-                </FacebookShareButton>
-                
-                
             </div>
         })}
         </div>

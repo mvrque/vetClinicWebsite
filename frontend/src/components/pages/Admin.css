@@ -1,11 +1,15 @@
 .form{
-    border: 1px solid black;
+    margin-top: 10px;
+ 
 }
 .input-container{
-    border: px solid red;
+   
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 .usernamepassword{
-    border: 1px solid blue;
+  
     width: 50%;
     height: 200px;
     margin: 0 auto;
@@ -15,16 +19,15 @@
     justify-content: center;
 }
 .addnews-container{
-    border: px solid black;
+   
     height: 400px;
     text-align: center;
 }
 .addnews-container h2{
-    margin: 0 0 25px 0;
+    margin: 25px 0 25px 0;
 
 }
 .addnews-wrapper{
-    border: 1px solid red;
     height: 300px;
     width: 75%;
     margin: 0 auto;
@@ -43,7 +46,6 @@
 }
 .description-container{
     height: 200px;
-    border: 1px solid rgb(188, 48, 48);
     font-size: 1.1rem;
 }
 .news-description[type="text"]{

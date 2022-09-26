@@ -15,9 +15,11 @@ function Home () {
         <>
             <HeroSection />
             <SomeServices />
+            
             <AboutUs />
-            <Specific />
             <Newsinhome />
+            <Specific />
+            
             <Footer></Footer>
             
         </>

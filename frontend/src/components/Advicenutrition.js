@@ -10,6 +10,7 @@ function Advicenutrition() {
 
   return (
     <div>
+      <Advicenav/>
         <h2>{t("nutrition.header")}</h2>
         <div className='nutrition-wrapper'>
           <h4>{t("nutrition.headerfood")}</h4>

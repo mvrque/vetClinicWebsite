@@ -1,42 +1,45 @@
-.advice-navbar {
-    border: 0px solid black;
-    background-color: #fcfcfc;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    font-size: 1.2rem;
-    background-color: #377036;
-    position: sticky;
-
+.advice-nav-list {
+    display: none;
 }
 
-.advice-navbar-container {
-    border: 0px solid red;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    position: sticky;
+@media screen and (max-width: 960px) {
+
+
+    .advice-nav-list{
+        display:block;
+        margin: 2%;
+
+    }
     
-}
-
-.advice-nav-menu {
-    border: 0px solid black;
-    display: flex;
-    justify-content: space-evenly;
+    .advice-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;    
+    }
+    .advice-item:hover{
+        background-color: ;
+        
+    }
+    .advice-link{
+        width: 100%;
+        text-decoration: none;
+        color: #377036;
+        
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+    .advices {
+        display: flex;
+        flex-direction: column;
+    }
     
-    list-style: none;
-    width: 100%;
-
-}
-
-.advice-nav-link{
-    font-size: 0.8rem ;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-.advice-nav-link:hover{
-    font-size: 0.81rem ;
-    padding-bottom: 2%;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    .advice-link:hover{
+        transform: scale(1.05);
+    }
+    .nav-advice-div *{
+        color: #377036;
+        margin-bottom: 10px;
+    }
 }

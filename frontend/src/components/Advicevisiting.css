@@ -50,6 +50,7 @@ h2{
         background-color: #ffffff;
         
         
+        
     }
     .advice-item:hover{
         background-color: ;
@@ -77,11 +78,8 @@ h2{
         flex-direction: column;
         border: px solid black;
     }
-    .left .advice-item {
-        
+    .nav-advice-div{
+        text-align: center;
     }
-    .right {
-        
-        
-    }
+    
 }

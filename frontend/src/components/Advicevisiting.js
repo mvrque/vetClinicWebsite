@@ -1,33 +1,17 @@
 import React from 'react'
-import Advicenav from './Advicenav'
 import './Advicevisiting.css'
 import {useTranslation} from "react-i18next";
 import { Link } from 'react-router-dom';
+import Advicenav from './Advicenav';
 
 
 function Advicevisiting() {
   const {t, i18n} = useTranslation('common');
+ 
   return (
     
     <div>
-        <div className='advice-nav-list'>
-          <ul className='advices'>
-            <div className='left'>
-              <li className='advice-item'><Link className='advice-link' to={'/questions'}>{t("advicenav.questions")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/advicevisiting'}>{t("advicenav.advicevisiting")}</Link></li>
-              <li className='advice-item'><Link  className='advice-link' to={'/adviceskinhair'} >{t("advicenav.adviceskinhair")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/advicenutrition'}>{t("advicenav.advicenutrition")}</Link></li>
-            </div>
-            <div className='right'>
-              <li className='advice-item'><Link className='advice-link' to={'/adviceparasites'}>{t("advicenav.adviceparasites")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/adviceurinarystone'}>{t("advicenav.adviceurinarystone")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/advicefemalecat'}>{t("advicenav.advicefemalecat")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/advicemalecat'}>{t("advicenav.advicemalecat")}</Link></li>
-              <li className='advice-item'><Link className='advice-link' to={'/advicelymedisease'}>{t("advicenav.advicelymedisease")}</Link></li>
-
-            </div>
-          </ul>
-        </div>
+        <Advicenav/>
         <h2>{t("advicevisiting.header")}</h2>
         <div className='main-container'>
         <div className='image-wrapper'>
@@ -70,5 +54,6 @@ function Advicevisiting() {
     </div>
   )
 }
+
 
 export default Advicevisiting
