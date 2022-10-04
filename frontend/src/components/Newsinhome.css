@@ -1,5 +1,4 @@
 .home-news-container {
-    border: px solid black;
     background-color: #cbb47f;
     color: black;
     height: 100%;
@@ -8,7 +7,6 @@
 }
 .home-one-news{
     width: 60%;
-    border: px solid black;
     margin:  5px auto;
     text-align: center;   
 }

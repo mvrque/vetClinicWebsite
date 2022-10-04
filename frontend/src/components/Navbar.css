@@ -129,7 +129,7 @@
   .nav-advice-item {
     height: 45px;
     list-style: none;
-    border: px solid black;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,12 +264,12 @@
     .advice-item {
       height: 30px;
       width: 9%;
-      border: px solid black;
+      
       font-size: 0.6rem;
       justify-content: center;
     }
     .advice-link{
-      border: px solid black;
+      
       width: 40%;
     }
   
