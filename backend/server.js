@@ -1,9 +1,8 @@
+
 const express = require("express");
 const mongoose = require("mongoose")
 const cors = require("cors")
 const app = express();
-var distDir = __dirname + "/dist/";
- app.use(express.static(distDir));
 
 const NewsModule = require('./models/News')
 
@@ -18,9 +17,8 @@ app.post('/insert', async (req, res) => {
 
   const newsHeader = req.body.newsHeader
   const newsDescription = req.body.newsDescription
-  const newsDate = ""
 
-  const news = new NewsModule({ newsHeader: newsHeader, newsDate: "",newsDescription: newsDescription});
+  const news = new NewsModule({ newsHeader: newsHeader, newsDescription: newsDescription});
   
   try {
     await news.save();
@@ -36,7 +34,7 @@ app.get('/read', async (req, res) => {
     if(err){
       res.send(err)
     }
-
+    
     res.send(result)
   })
 })
@@ -47,7 +45,15 @@ app.delete("/delete/:id", async (req, res) =>{
   await NewsModule.findByIdAndRemove(id).exec();
   res.send('deleted')
 })
+//app.use(express.static(path.join(__dirname, "/frontend/build")));
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/frontend/build', 'index.html'));
+// });
   
-app.listen(3001, () => {
-  console.log("Running on 3001. Go CATCH ME")
+
+
+
+app.listen(process.env.PORT || 5050, () => {
+  console.log("Running on 5050. Go CATCH ME")
 })
