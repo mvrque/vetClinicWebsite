@@ -36,6 +36,7 @@
         "katrin-desc":"Katrin Vanem on lõpetanud EPMÜ Veterinaaria teaduskonna 2000. aastal ja samast aastast töötab ta Tatari Loomakliinikus.",
         "helerin": "Helerin Talpsepp - administraator",
         "cetlin":"Cetlin Jõgis - loomaarsti abiline",
+        "lisanna": "Lisanna Kõgel - loomaarsti abiline",
         "thanks":"Täname meie partnereid!"
     },
     "services":{
@@ -67,9 +68,9 @@
         "myxoren": "Myxoren",
         "castrationsterilization": "Kastreerimine & Steriliseerimine",
         "dogcast": "Koera kastreerimine - sõltub koera kaalust (hinnale lisandub valuvaigisti ja krae)",
-        "dogster": "Koera steriliseerimine - sõltub koera kaalust (hinnale lisandub valuvaigisti)",
+        "dogster": "Koera steriliseerimine - sõltub koera kaalust (hinnale lisandub valuvaigisti ja vest)",
         "catcast": "Kassi kastreerimine (hinnale lisandub valuvaigisti)",
-        "catster": "Kassi steriliseerimine (hinnale lisandub valuvaigisti)",
+        "catster": "Kassi steriliseerimine (hinnale lisandub valuvaigisti ja vest)",
         "othersster": "Küüliku, närilise ja tuhkru steriliseerimine",
         "otherscast": "Küüliku, närilise ja tuhkru kastreerimine",
         "cosmetical": "Kosmeetilised protseduurid",

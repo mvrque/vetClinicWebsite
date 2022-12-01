@@ -14,77 +14,77 @@ function Prices() {
             <table> 
               <tr>
                 <td>{t("prices.visitfee")}</td>
-                <td>22€</td>
-              </tr>
-              <tr>
-                <td>{t("prices.returnvisit")}</td>
-                <td>13€</td>
-              </tr>
-              <tr>
-                <td>{t("prices.operation")}</td>
                 <td>25€</td>
               </tr>
               <tr>
+                <td>{t("prices.returnvisit")}</td>
+                <td>15€</td>
+              </tr>
+              <tr>
+                <td>{t("prices.operation")}</td>
+                <td>30€</td>
+              </tr>
+              <tr>
                 <td>{t("prices.nonregistered")}</td>
-                <td>27€</td>
+                <td>30€</td>
               </tr>
         </table>
         <h3 className='prices-heading'>{t("services.vaccination")}</h3>
         <table>
           <tr>
             <td>{t("prices.nobivac")}</td>
-            <td>22€</td>
+            <td>25€</td>
           </tr>
           <tr>
             <td>{t("prices.nobivac4")}</td>
-            <td>27.20€</td>
-          </tr>
-          <tr>
-            <td>{t("prices.dhppil4r")}</td>
             <td>30€</td>
           </tr>
           <tr>
+            <td>{t("prices.dhppil4r")}</td>
+            <td>33€</td>
+          </tr>
+          <tr>
             <td>{t("prices.rabies")}</td>
-            <td>20€</td>
+            <td>23€</td>
           </tr>
           <tr>
             <td>{t("prices.tricat")}</td>
-            <td>24€</td>
+            <td>27€</td>
           </tr>
           <tr>
             <td>{t("prices.tricatr")}</td>
-            <td>28€</td>
+            <td>31€</td>
           </tr>
           <tr>
             <td>{t("prices.myxoren")}</td>
-            <td>26€</td>
+            <td>29€</td>
           </tr>
         </table>
         <h3 className='prices-heading'>{t("prices.castrationsterilization")}</h3>
         <table>
           <tr>
             <td>{t("prices.dogcast")}</td>
-            <td>162€ - 287€</td>
+            <td>162€ - 300€</td>
           </tr>
           <tr>
             <td>{t("prices.dogster")}</td>
-            <td>224€ - 357€</td>
+            <td>224€ - 400€</td>
           </tr>
           <tr>
             <td>{t("prices.catcast")}</td>
-            <td>50€</td>
+            <td>60€</td>
           </tr>
           <tr>
             <td>{t("prices.catster")}</td>
-            <td>80€</td>
+            <td>100€</td>
           </tr>
           <tr>
             <td>{t("prices.othersster")}</td>
-            <td>80€</td>
+            <td>90€</td>
           </tr>
           <tr>
             <td>{t("prices.otherscast")}</td>
-            <td>90€</td>
+            <td>130€</td>
           </tr>
         </table>
         <h3 className='prices-heading'>{t("prices.cosmetical")}</h3>

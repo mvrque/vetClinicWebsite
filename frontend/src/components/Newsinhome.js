@@ -35,7 +35,7 @@ function Newsinhome() {
     // }, [])
 
   useEffect(() => {
-    fetch("https://tatarinews.herokuapp.com/read")
+    fetch("https://tatarinews-api.cyclic.app/read")
       .then((response) => {
         if(!response.ok) {
           throw new Error(

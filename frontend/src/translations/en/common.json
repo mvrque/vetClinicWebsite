@@ -36,6 +36,7 @@
         "katrin-desc":"Katrin Vanem graduated from the Faculty of Veterinary Medicine of EPMÜ in 2000 and has been working at Tatar Animal Clinic since the same year.",
         "helerin": "Helerin Talpsepp - administrator",
         "cetlin":"Cetlin Jõgis - veterinary assistant",
+        "lisanna": "Lisanna Kõgel - veterinary assistant",
         "thanks":"Thanks to our partners!"
     },
     "services":{
@@ -67,9 +68,9 @@
         "myxoren": "Myxoren",
         "castrationsterilization": "Castration & sterilization",
         "dogcast": "Castration of the dog - depends on the dog's weight (pain reliever and collar are added to the price)",
-        "dogster": "Sterilization of the dog - depends on the dog's weight (analgesic is added to the price)",
+        "dogster": "Sterilization of the dog - depends on the dog's weight (pain reliever and post operation vest is added to the price)",
         "catcast": "Castration of a cat (pain reliever is added to the price)",
-        "catster": "Sterilization of a cat (pain reliever is added to the price)",
+        "catster": "Sterilization of a cat (pain reliever and post operation vest is added to the price)",
         "othersster": "Sterilization of rabbit, rodent and ferret",
         "otherscast": "Castration of rabbit, rodent and ferret",
         "cosmetical": "Cosmetical procedures",

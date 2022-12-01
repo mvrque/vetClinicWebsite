@@ -54,6 +54,7 @@ export default function Aboutinpage(){
                     <p>{t("about.katrin-desc")}</p>
 
                     <h3>{t("about.helerin")}</h3>
+                    <h3>{t("about.lisanna")}</h3>
 
                     <h3>{t("about.cetlin")}</h3>
                 </div>

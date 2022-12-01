@@ -16,7 +16,7 @@ import {FacebookIcon} from "react-share";
 function Newsall() {
   const [newsList, setNewsList] = useState([])
   useEffect(() => {
-    Axios.get("https://tatarinews.herokuapp.com/read")
+    Axios.get("https://tatarinews-api.cyclic.app/read")
     .then((response) => {
         setNewsList(response.data)
     })
@@ -50,6 +50,7 @@ function Newsall() {
             return <div className='one-news' key={key}>
                 <h1>{val.newsHeader}</h1>
                 <p> {val.newsDescription} </p>
+                <span>{val.datePosted}</span>
             </div>
         })}
         </div>

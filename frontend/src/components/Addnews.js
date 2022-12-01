@@ -1,32 +1,41 @@
 import React, { useState, useEffect } from 'react'
 import Axios from "axios";
+import News from './pages/News';
 
+let newDate = new Date()
+let date = newDate.getDate();
+let month = newDate.toLocaleString('default', { month: 'short' })
+let year = newDate.getFullYear();
 
 
 function Addnews() {
     const [newsHeader , setNewsHeading] = useState("");
     const [newsDescription, setDescription] = useState("");
+    const [datePosted] = date + month;
 
     const [newsList, setNewsList] = useState([])
 
     useEffect(() => {
-        Axios.get("https://tatarinews.herokuapp.com/read").then((response) => {
+        Axios.get("https://tatarinews-api.cyclic.app/read").then((response) => {
             setNewsList(response.data)
+            
         })
     }, [])
-    const reversedList = newsList.reverse()
+    //const reversedList = newsList.reverse()
 
     const addNews = () => {
-        Axios.post("https://tatarinews.herokuapp.com/insert",{
+        Axios.post("https://tatarinews-api.cyclic.app/insert",{
             newsHeader: newsHeader,
             newsDescription: newsDescription,
+            datePosted: date+'.'+' '+month+' '+ year
         })
-        window.location.reload(false);
-        console.log(newsHeader + newsDescription) 
+        //window.location.reload(false);
+        
+        console.log(newsHeader + newsDescription + datePosted) 
     }
 
     const deleteNews = (id) => {
-        Axios.delete(`https://tatarinews.herokuapp.com/delete/${id}`)
+        Axios.delete(`https://tatarinews-api.cyclic.app/delete/${id}`)        
     }
   return (
     <div className="addnews-container">
@@ -44,23 +53,26 @@ function Addnews() {
             <textarea 
             className='description-container' 
             name="Text1" 
-            cols="40" 
-            rows="5" 
+            cols="" 
+            rows="" 
             type='text'
             onChange={(event) =>{
                 setDescription(event.target.value)
-            }} />         
+            }} />
+            <p> {date}.{month}</p>         
             <button onClick={addNews}>Lisa uudis!</button>
 
             
         </div>
         <h1>Uudised</h1>
         <div className='news-container'>
-        {reversedList.map((val, key) => {
+        {newsList.map((val, key, array) => {
             return <div className='one-news' key={key}>
-                <h1>{val.newsHeader}</h1>
-                <p> {val.newsDescription} </p>
-                <button onClick={() => deleteNews(val._id)}>KUSTUTA</button>
+                <h1>{array[array.length - 1 - key].newsHeader}</h1>
+                
+                <p> {array[array.length - 1 - key].newsDescription} </p>
+                <span>{array[array.length - 1 - key].datePosted}</span>
+                <button onClick={() => deleteNews(array[array.length - 1 - key]._id)}>KUSTUTA</button>
             </div>
         })}
         </div>

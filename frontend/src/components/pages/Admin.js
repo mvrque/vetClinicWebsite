@@ -9,7 +9,7 @@ function Admin() {
     const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const info = Database.auth
-  console.log(info)
+  
   // User Login info
 
   const errors = {
@@ -37,7 +37,7 @@ function Admin() {
       // Username not found
       setErrorMessages({ name: "uname", message: errors.uname });
     }
-    console.log(userData)
+    console.log('Success')
   };
   
   // Generate JSX code for error message
