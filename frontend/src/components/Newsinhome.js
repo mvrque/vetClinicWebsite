@@ -58,7 +58,7 @@ function Newsinhome() {
       });
       
   }, []);
-  console.log(description)
+  
 
     
   return (
