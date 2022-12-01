@@ -31,7 +31,6 @@ function Addnews() {
         })
         //window.location.reload(false);
         
-        console.log(newsHeader + newsDescription + datePosted) 
     }
 
     const deleteNews = (id) => {
