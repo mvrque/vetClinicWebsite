@@ -6,6 +6,7 @@ import ButtonMailto from './ButtonMailto';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import {useTranslation} from "react-i18next";
+import {Helmet} from "react-helmet";
 
 
 const slideImages = [
@@ -22,13 +23,20 @@ const slideImages = [
       caption: ''
     },
   ];
-  
+    const templateTitle = document.getElementById("template-title");
+    if (templateTitle) templateTitle.parentNode.removeChild(templateTitle)
 
 export default function Aboutinpage(){
     const {t, i18n} = useTranslation('common');
     return (
-    <div>   
+    <div> 
+        <Helmet>
+            <title>Kliinikust</title>
+            <meta name="description" content="Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga." data-react-helmet="true"/>
+            <meta name="keywords" content="tatari loomakliinik, helista, tatari tallinn, tatari 3, if kindlustus, laboklin, dimedium, kelmiküla kassijaam, eesti loomakaitse selts" />
+        </Helmet> 
         <div className='about-page-container'>
+        
             <h2>{t("about.aboutinpage-heading")}</h2>
             <p>{t("about.description")}</p>
             <div className='map-container'>

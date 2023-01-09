@@ -27,6 +27,8 @@
     "react-axios": "^2.0.6",
     "react-bootstrap-icons": "^1.8.4",
     "react-dom": "^18.1.0",
+    "react-head": "^3.4.2",
+    "react-helmet": "^6.1.0",
     "react-i18next": "^11.18.3",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
