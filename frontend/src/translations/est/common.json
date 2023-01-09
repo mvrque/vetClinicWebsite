@@ -51,7 +51,7 @@
         "genetictests": "Geenitestid - Saksamaa Laboklin laboris",
         "knee": "Põlveuuring",
         "surgical": "Kirurgilised menetlused",
-        "information": "Lisainformatsiooni teenuste kohta saab kliiniku üldtelefonilt 6467084."
+        "information": "Lisainformatsiooni teenuste kohta saab kliiniku üldtelefonilt +372 646 7084."
     },
     "prices":{
         "header": "Hinnakiri",
@@ -83,7 +83,7 @@
     },
     "products":{
         "header": "Meie kliinikus pakutavad tooted",
-        "information": "Lisainformatsiooni toodete kohta saab kliiniku üldtelefonilt 6467084."
+        "information": "Lisainformatsiooni toodete kohta saab kliiniku üldtelefonilt +372 646 7084."
     },
     "questions":{
         "header": "KKK - Korduma kippuvad küsimused",
@@ -123,7 +123,7 @@
         "consultation":"Kui soovid loomaarstiga telefoni teel konsulteerida, tuleks arvestada sellega, et paralleelselt on toimumas ka vastuvõtud, mis tähendab, et vajadusel võime paluda Teil tagasi helistada.",
         "medicalhistory":"Soovi korral teeme meie patsientide haiguslugudest väljavõtteid, kuid ka siinkohal tasuks arvestada väikese ajavaruga.",
         "leash":"Tagamaks enda ja teiste ohutust ning ära hoida looma sobimatut käitumist, palume lemmikud visiidi ajal hoida kas rihma otsas või puuris.",
-        "parking":"Meie kliiniku hoovis on klientidele tasuta parkimisvõimalus. Selleks, et tõkkepuud avada, palume helistada kliiniku üldtelefonil 646 7084."
+        "parking":"Meie kliiniku hoovis on klientidele tasuta parkimisvõimalus. Selleks, et tõkkepuud avada, palume helistada kliiniku üldtelefonil +372 646 7084."
     },
     "adviceskin":{
         "header": "Nahk ja karvastik",

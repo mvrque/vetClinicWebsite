@@ -30,11 +30,7 @@ export default function Aboutinpage(){
     const {t, i18n} = useTranslation('common');
     return (
     <div> 
-        <Helmet>
-            <title>Kliinikust</title>
-            <meta name="description" content="Tatari Loomakliinikul on tihedad koostöösidemed mitme loomakaitsele pühendunud organisatsiooniga." data-react-helmet="true"/>
-            <meta name="keywords" content="tatari loomakliinik, helista, tatari tallinn, tatari 3, if kindlustus, laboklin, dimedium, kelmiküla kassijaam, eesti loomakaitse selts" />
-        </Helmet> 
+         
         <div className='about-page-container'>
         
             <h2>{t("about.aboutinpage-heading")}</h2>

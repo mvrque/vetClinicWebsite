@@ -51,7 +51,7 @@
         "genetictests": "Genetic tests - German laboratory Laboklin",
         "knee": "Knee joints clinical evaluation",
         "surgical": "Surgical procedures",
-        "information": "Additional information about the services can be obtained by calling the clinic's general telephone number 6467084."
+        "information": "Additional information about the services can be obtained by calling the clinic's general telephone number +372 646 7084."
     },
     "prices":{
         "header": "Prices",
@@ -83,7 +83,7 @@
     },
     "products":{
         "header": "Products offered in our clinic",
-        "information": "Additional information about the products can be obtained by calling the clinic's general telephone number 6467084."
+        "information": "Additional information about the products can be obtained by calling the clinic's general telephone number +372 646 7084."
     },
     "questions":{
         "header": "FAQ - Frequently asked questions",
