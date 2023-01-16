@@ -31,7 +31,8 @@ function Admin() {
         // Invalid password
         setErrorMessages({ name: "pass", message: errors.pass });
       } else {
-        setIsSubmitted(true);
+        setIsSubmitted(true)
+        sessionStorage.setItem("isSubmitted", "true");
       }
     } else {
       // Username not found
@@ -66,11 +67,12 @@ function Admin() {
       </form>
     </div>
   );
-  
+  let loggeIn = sessionStorage.getItem("loggedIn")
   return (
     <div className="app">
       <div className="login-form">
-        {isSubmitted ? 
+        
+        {sessionStorage.getItem('isSubmitted') ? 
         <div className='addnews-container'>
             <Addnews />
         </div> : renderForm}

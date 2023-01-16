@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Axios from "axios";
+import axios from "axios";
 import News from './pages/News';
 
 let newDate = new Date()
@@ -7,7 +7,10 @@ let date = newDate.getDate();
 let month = newDate.toLocaleString('default', { month: 'short' })
 let year = newDate.getFullYear();
 
-
+function refreshPage(){
+    console.log('refresh')
+    return setTimeout(window.location.reload(true)),1000
+}
 function Addnews() {
     const [newsHeader , setNewsHeading] = useState("");
     const [newsDescription, setDescription] = useState("");
@@ -16,26 +19,42 @@ function Addnews() {
     const [newsList, setNewsList] = useState([])
 
     useEffect(() => {
-        Axios.get("https://tatarinews-api.cyclic.app/read").then((response) => {
+        axios.get("https://tatarinews-api.cyclic.app/read")
+        .then((response) => {
             setNewsList(response.data)
             
+        }).catch((err) => {
+            console.log(err.response)
         })
-    }, [])
+
+    },[])
     //const reversedList = newsList.reverse()
 
     const addNews = () => {
-        Axios.post("https://tatarinews-api.cyclic.app/insert",{
+        axios.post("https://tatarinews-api.cyclic.app/insert",{
             newsHeader: newsHeader,
             newsDescription: newsDescription,
-            datePosted: date+'.'+' '+month+' '+ year
+            datePosted: date+'.'+' '+month+' '+ year,
+            
         })
-        //window.location.reload(false);
-        
+        .then((response) => {
+            console.log(response)
+            refreshPage()
+        }).catch((err) => {
+            console.error(err)
+        })
     }
 
     const deleteNews = (id) => {
-        Axios.delete(`https://tatarinews-api.cyclic.app/delete/${id}`)        
+        axios.delete(`https://tatarinews-api.cyclic.app/delete/${id}`)
+        .then((response) => {
+            console.log(response)
+            refreshPage()
+        }).catch((err) => {
+            console.error(err)
+        })
     }
+    
   return (
     <div className="addnews-container">
         <h2>Lisa uudis</h2>
@@ -76,7 +95,9 @@ function Addnews() {
         })}
         </div>
     </div>
+    
   )
+  
 }
 
 export default Addnews
